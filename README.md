@@ -16,7 +16,7 @@ Estaré siguiendo la siguiente [ruta de aprendizaje de Go](https://roadmap.sh/go
 
 [✔️] ♾️ 0 > [Introduction](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day00.md)
 
-
+[ ] ♾️ 1 > [Conditionals, Functions and more...](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day00.md)
 
 ## Going Deeper (Profundizando)
 
