@@ -182,8 +182,6 @@ go run obtener_cuadrado.go
 El área del cuadrado es: 100
 ```
 
-
-
 **Ejercicio**
 
 Operación aritmética.
@@ -194,26 +192,26 @@ package main
 import "fmt"
 
 func main() {
-	/* Palabra reservada + Nombre de variable + Tipo de dato + Valor */
-	var A int = 10
-	var B int = 20
+    /* Palabra reservada + Nombre de variable + Tipo de dato + Valor */
+    var A int = 10
+    var B int = 20
 
-	Suma := A + B
-	Resta := A - B
-	Multiplicacion := A * B
-	Division := A / B
-	Modulo := A % B
+    Suma := A + B
+    Resta := A - B
+    Multiplicacion := A * B
+    Division := A / B
+    Modulo := A % B
 
-	A++
-	B--
+    A++
+    B--
 
-	fmt.Println("Suma:", Suma)
-	fmt.Println("Resta:", Resta)
-	fmt.Println("Multiplicacion:", Multiplicacion)
-	fmt.Println("Division:", Division)
-	fmt.Println("Modulo:", Modulo)
-	fmt.Println("Incremental:", A)
-	fmt.Println("Decremental:", B)
+    fmt.Println("Suma:", Suma)
+    fmt.Println("Resta:", Resta)
+    fmt.Println("Multiplicacion:", Multiplicacion)
+    fmt.Println("Division:", Division)
+    fmt.Println("Modulo:", Modulo)
+    fmt.Println("Incremental:", A)
+    fmt.Println("Decremental:", B)
 }
 ```
 
@@ -230,8 +228,6 @@ Incremental: 11
 Decremental: 19
 ```
 
-
-
 **Ejercicio**
 
 Calcular el área de un rectángulo, trapecio y círculo.
@@ -240,20 +236,20 @@ Calcular el área de un rectángulo, trapecio y círculo.
 package main
 
 import (
-	"fmt"
-	"math"
+    "fmt"
+    "math"
 )
 
 func main() {
-	/* Declaracion de variables base */
-	Base := 10
-	BaseMayor := 20
-	Altura := 30
-	Radio := 20
+    /* Declaracion de variables base */
+    Base := 10
+    BaseMayor := 20
+    Altura := 30
+    Radio := 20
 
-	fmt.Println("El área del rectángulo es:", Base*Altura)
-	fmt.Println("El área del trapecio es:", ((BaseMayor+Base)*Altura)/2)
-	fmt.Println("El área del círculo es:", math.Pi*math.Pow(float64(Radio), 2))
+    fmt.Println("El área del rectángulo es:", Base*Altura)
+    fmt.Println("El área del trapecio es:", ((BaseMayor+Base)*Altura)/2)
+    fmt.Println("El área del círculo es:", math.Pi*math.Pow(float64(Radio), 2))
 }
 ```
 
@@ -265,8 +261,6 @@ El área del rectángulo es: 300
 El área del trapecio es: 450
 El área del círculo es: 1256.6370614359173
 ```
-
-
 
 **Ejercicio**
 
@@ -335,6 +329,52 @@ go 1.17
 
 
 
+## Data Types
+
+Estos son los tipos de datos y tipos compuestos que podemos encontrar en Go.
+
+- Basic Types
+  - Integers
+    - Signed
+      - int
+      - int8
+      - int16 
+      - int32 
+      - int64
+    - Unsigned
+      - uint
+      - uint8
+      - uint16
+      - uint32
+      - uint64
+      - uintptr
+  - Floats
+    - float32
+    - float64
+  - Complex Numbers
+    - complex64
+    - complex128
+  - Byte
+  - Rune
+  - String
+  - Boolean
+- Composite Types
+  - Collection/Aggregation or Non-Reference Types
+    - Arrays
+    - Structs
+  - Reference Types
+    - Slices
+    - Maps
+    - Channels
+    - Pointers
+    - Function/Methods
+  - Interface
+    - Special case of empty Interface
+
+
+
+
+
 **Fuentes**
 
 [Qué es Go o Golang | OpenWebinars](https://openwebinars.net/blog/que-es-go/)
@@ -345,7 +385,13 @@ go 1.17
 
 [GoLang Tutorials: Table of Contents](https://golangtutorials.blogspot.com/2011/05/table-of-contents.html)
 
-YouTube Vídeos
+Revisar este: [All data types in Golang with examples - Welcome To Golang By Example](https://golangbyexample.com/all-data-types-in-golang-with-examples/)
+
+
+
+
+
+`YouTube Vídeos`
 
 [Golang Tutorial for Beginners | Full Go Course TechWorld With Nana](https://www.youtube.com/watch?v=yyUHQIec83I)
 
