@@ -9,3 +9,29 @@ El objetivo del mismo es que otros usuarios puedan hacerse de esta documentació
 Ciertamente es un reto para mi el hecho de mantener una racha de 30 días aprendiendo de Go y por supuesto, documentándola con proyectos reales, aunque desde el inicio se parta por ejercicios comunes. La idea es poder aplicarlas en la rama que prentendo mejorar cada día, DevOps.
 
 ¡Sígueme en el viaje! 😎
+
+Estaré siguiendo la siguiente [ruta de aprendizaje de Go](https://roadmap.sh/golang).
+
+## Learn the Basics (Aprendiendo lo básico)
+
+[✔️] ♾️ 0 > [Introduction](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day00.md)
+
+
+
+## Going Deeper (Profundizando)
+
+## Building CLIs
+
+## ORMs
+
+## Web Frameworks
+
+## Logging
+
+## Real Time Communication (Comunicación en tiempo real)
+
+## API Clients (Clientes API)
+
+## Tools for Microservices (Herramientas para microservicios)
+
+## Testing your Apps (Probando aplicaciones)
