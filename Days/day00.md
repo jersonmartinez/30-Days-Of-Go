@@ -70,7 +70,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, World!")
+    fmt.Println("Hello, World!")
 }
 ```
 
@@ -93,7 +93,245 @@ go run hello_world.go
 Hello, World!
 ```
 
+## Variables and declaration
 
+Las variables sirven para asociar una tira de datos con un sector de la memoria, siendo esta, un identificador. En palabras sencillas, las variables guardan datos.
+
+Definir variables con las palabra reservada `var` y `const`.
+
+**Declarando constantes:**
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    /* Palabra reservada + Nombre de variable + Tipo de dato + Valor */
+    const PI float64 = 3.14
+    const PI2 = 3.14
+
+    fmt.Println("Pi:", PI, "\nPi2: ", PI2)
+
+}
+```
+
+```bash
+go run constantes.go
+
+#Output
+Pi: 3.14 
+Pi2:  3.14
+```
+
+**Declarando variables enteras**
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    /* Declara la variable "Base", identifica el tipo de dato respecto al valor */
+    Base := 10          //Primera forma
+    var Altura int = 20 //Segunda forma
+    var Area int        //Go no compila si las variables no son usadas
+
+    fmt.Println("Base: ", Base, " | Altura: ", Altura, " | Area: ", Area)
+
+    /*Si no hay valores definidos, Go le asigna un vacío.*/
+    var a int     //0
+    var b float64 //0.0
+    var c string  //""
+    var d bool    //false
+
+    fmt.Println("a: ", a, " | b: ", b, " | c: ", c, " | d: ", d)
+}a, Area)
+}
+```
+
+```bash
+go run variables.go
+
+#Output
+Base:  10  | Altura:  20  | Area:  0
+a:  0  | b:  0  | c:    | d:  false
+```
+
+**Ejercicio**
+
+Calcular el cuadrado e imprimirlo.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    const BaseCuadrado = 10
+    AreaCuadrado := BaseCuadrado * BaseCuadrado
+
+    fmt.Println("El área del cuadrado es:", AreaCuadrado)
+}
+```
+
+```bash
+go run obtener_cuadrado.go
+
+#Output
+El área del cuadrado es: 100
+```
+
+
+
+**Ejercicio**
+
+Operación aritmética.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	/* Palabra reservada + Nombre de variable + Tipo de dato + Valor */
+	var A int = 10
+	var B int = 20
+
+	Suma := A + B
+	Resta := A - B
+	Multiplicacion := A * B
+	Division := A / B
+	Modulo := A % B
+
+	A++
+	B--
+
+	fmt.Println("Suma:", Suma)
+	fmt.Println("Resta:", Resta)
+	fmt.Println("Multiplicacion:", Multiplicacion)
+	fmt.Println("Division:", Division)
+	fmt.Println("Modulo:", Modulo)
+	fmt.Println("Incremental:", A)
+	fmt.Println("Decremental:", B)
+}
+```
+
+```bash
+go run operaciones_aritmeticas.go 
+
+#Output
+Suma: 30
+Resta: -10
+Multiplicacion: 200
+Division: 0
+Modulo: 10
+Incremental: 11
+Decremental: 19
+```
+
+
+
+**Ejercicio**
+
+Calcular el área de un rectángulo, trapecio y círculo.
+
+```go
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	/* Declaracion de variables base */
+	Base := 10
+	BaseMayor := 20
+	Altura := 30
+	Radio := 20
+
+	fmt.Println("El área del rectángulo es:", Base*Altura)
+	fmt.Println("El área del trapecio es:", ((BaseMayor+Base)*Altura)/2)
+	fmt.Println("El área del círculo es:", math.Pi*math.Pow(float64(Radio), 2))
+}
+```
+
+```bash
+go run calcular_area_rectangulo_trapecio_circulo.go
+
+#Output
+El área del rectángulo es: 300
+El área del trapecio es: 450
+El área del círculo es: 1256.6370614359173
+```
+
+
+
+**Ejercicio**
+
+Crear un saludo modular. 
+
+Para ello, crearemos 3 ficheros: 
+
+- main.go
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+
+    hello()
+    bye()
+}
+```
+
+- hello.go
+
+```go
+package main
+
+import "fmt"
+
+func hello() {
+    fmt.Println("Hello, friend!")
+}
+```
+
+- bye.go
+
+```go
+package main
+
+import "fmt"
+
+func bye() {
+    fmt.Println("Goodbye, friend!")
+}
+```
+
+Ejecucion: 
+
+```bash
+go mod init Package/main
+go run .
+
+#Output
+Hello, World!
+Hello, friend!
+Goodbye, friend!
+```
+
+Generará un fichero `go.mod` que contiene lo siguiente: 
+
+```go
+module Package/main
+
+go 1.17
+```
 
 
 
