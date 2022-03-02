@@ -5,6 +5,7 @@
   - [Basic Syntax](#basic-syntax)
   - [Variables and declaration](#variables-and-declaration)
   - [Data Types](#data-types)
+  - [Recursos](#recursos)
 
 # Introducción
 
@@ -418,7 +419,7 @@ Estos son los tipos de datos y tipos compuestos que podemos encontrar en Go.
 //Ejemplo : c:=10 + 8i
 ```
 
-**Recursos**
+## Recursos
 
 [Qué es Go o Golang | OpenWebinars](https://openwebinars.net/blog/que-es-go/)
 
