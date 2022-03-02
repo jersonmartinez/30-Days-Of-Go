@@ -1,4 +1,11 @@
-# Introducción
+> Navega por la tabla de contenido
+
+- [Paquete fmt](#paquete-fmt)
+  - [Println](#println)
+  - [Printf](#printf)
+  - [Sprintf](#sprintf)
+- [Condicionales...](#condicionales)
+- [Recursos](#recursos)
 
 ## Paquete fmt
 
@@ -12,7 +19,7 @@ Revisaremos las 3 posibles funciones más importantes de `fmt`.
 
 - Sprintf
 
-**Println**
+### Println
 
 Imprime y agrega un saldo de línea.
 
@@ -37,7 +44,7 @@ go run Println.go
 Hola, Jerson Martínez
 ```
 
-**Printf**
+### Printf
 
 Imprime con un formato.
 
@@ -95,7 +102,7 @@ Vengo desde el 2030
 Dirección de memorias de las variables: Firstname 0xc000088220, Lastname 0xc000088230, Year 0xc0000aa058
 ```
 
-**Sprintf**
+### Sprintf
 
 Aplica un formato a una cadena de caracteres y devuelve la cadena formateada para ser almacenada en una variable y posteriormente esta pueda ser manejada.
 
@@ -124,7 +131,7 @@ Hola, Jerson Martínez
 
 ## Condicionales...
 
-**Recursos**
+## Recursos
 
 [fmt package - fmt - pkg.go.dev](https://pkg.go.dev/fmt)
 
