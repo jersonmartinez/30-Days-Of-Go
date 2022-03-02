@@ -1,13 +1,10 @@
-- [Introducción](#Introduccion)
-    - [Concepto](#concepto)
-    - [Instalando Go con Choco para Windows](#Instalando-Go-con-Choco-para-Windows)
-    - [Instalando Go con Choco para Windows](#Instalando-Go-con-Choco-para-Windows)
-
-
-- [Awesome Python](#awesome-python)
-    - [Admin Panels](#admin-panels)
-    - [Algorithms and Design Patterns](#algorithms-and-design-patterns)
-    - [ASGI Servers](#asgi-servers)
+- [Introducción](#introducción)
+  - [Concepto](#concepto)
+  - [Instalando Go con Choco para Windows](#instalando-go-con-choco-para-windows)
+  - [Instalando Go en GNU/Linux (Ubuntu)](#instalando-go-en-gnulinux-ubuntu)
+  - [Basic Syntax](#basic-syntax)
+  - [Variables and declaration](#variables-and-declaration)
+  - [Data Types](#data-types)
 
 # Introducción
 
