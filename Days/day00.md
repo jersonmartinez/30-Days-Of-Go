@@ -327,8 +327,6 @@ module Package/main
 go 1.17
 ```
 
-
-
 ## Data Types
 
 Estos son los tipos de datos y tipos compuestos que podemos encontrar en Go.
@@ -371,10 +369,6 @@ Estos son los tipos de datos y tipos compuestos que podemos encontrar en Go.
   - Interface
     - Special case of empty Interface
 
-
-
-
-
 **Fuentes**
 
 [Qué es Go o Golang | OpenWebinars](https://openwebinars.net/blog/que-es-go/)
@@ -386,10 +380,6 @@ Estos son los tipos de datos y tipos compuestos que podemos encontrar en Go.
 [GoLang Tutorials: Table of Contents](https://golangtutorials.blogspot.com/2011/05/table-of-contents.html)
 
 Revisar este: [All data types in Golang with examples - Welcome To Golang By Example](https://golangbyexample.com/all-data-types-in-golang-with-examples/)
-
-
-
-
 
 `YouTube Vídeos`
 
