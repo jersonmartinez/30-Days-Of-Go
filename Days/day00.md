@@ -1,8 +1,10 @@
 # Introducción
 
-- [Introducción](#Introducción)
-    - [Concepto](#Concepto)
-    - [Instalando Go con Choco para Windows](#Instalando Go con Choco para Windows)
+- [Introducción](#Introducción)  
+	
+	- [Concepto](#Concepto)
+	
+	- [Instalando Go con Choco para Windows](#Instalando Go con Choco para Windows)
 
 ## Concepto
 
@@ -74,7 +76,7 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println("Hello, World!")
+		fmt.Println("Hello, World!")
 }
 ```
 
@@ -111,11 +113,11 @@ package main
 import "fmt"
 
 func main() {
-    /* Palabra reservada + Nombre de variable + Tipo de dato + Valor */
-    const PI float64 = 3.14
-    const PI2 = 3.14
+		/* Palabra reservada + Nombre de variable + Tipo de dato + Valor */
+		const PI float64 = 3.14
+		const PI2 = 3.14
 
-    fmt.Println("Pi:", PI, "\nPi2: ", PI2)
+		fmt.Println("Pi:", PI, "\nPi2: ", PI2)
 
 }
 ```
@@ -136,20 +138,20 @@ package main
 import "fmt"
 
 func main() {
-    /* Declara la variable "Base", identifica el tipo de dato respecto al valor */
-    Base := 10          //Primera forma
-    var Altura int = 20 //Segunda forma
-    var Area int        //Go no compila si las variables no son usadas
+		/* Declara la variable "Base", identifica el tipo de dato respecto al valor */
+		Base := 10          //Primera forma
+		var Altura int = 20 //Segunda forma
+		var Area int        //Go no compila si las variables no son usadas
 
-    fmt.Println("Base: ", Base, " | Altura: ", Altura, " | Area: ", Area)
+		fmt.Println("Base: ", Base, " | Altura: ", Altura, " | Area: ", Area)
 
-    /*Si no hay valores definidos, Go le asigna un vacío.*/
-    var a int     //0
-    var b float64 //0.0
-    var c string  //""
-    var d bool    //false
+		/*Si no hay valores definidos, Go le asigna un vacío.*/
+		var a int     //0
+		var b float64 //0.0
+		var c string  //""
+		var d bool    //false
 
-    fmt.Println("a: ", a, " | b: ", b, " | c: ", c, " | d: ", d)
+		fmt.Println("a: ", a, " | b: ", b, " | c: ", c, " | d: ", d)
 }
 ```
 
@@ -171,10 +173,10 @@ package main
 import "fmt"
 
 func main() {
-    const BaseCuadrado = 10
-    AreaCuadrado := BaseCuadrado * BaseCuadrado
+		const BaseCuadrado = 10
+		AreaCuadrado := BaseCuadrado * BaseCuadrado
 
-    fmt.Println("El área del cuadrado es:", AreaCuadrado)
+		fmt.Println("El área del cuadrado es:", AreaCuadrado)
 }
 ```
 
@@ -195,26 +197,26 @@ package main
 import "fmt"
 
 func main() {
-    /* Palabra reservada + Nombre de variable + Tipo de dato + Valor */
-    var A int = 10
-    var B int = 20
+		/* Palabra reservada + Nombre de variable + Tipo de dato + Valor */
+		var A int = 10
+		var B int = 20
 
-    Suma := A + B
-    Resta := A - B
-    Multiplicacion := A * B
-    Division := A / B
-    Modulo := A % B
+		Suma := A + B
+		Resta := A - B
+		Multiplicacion := A * B
+		Division := A / B
+		Modulo := A % B
 
-    A++
-    B--
+		A++
+		B--
 
-    fmt.Println("Suma:", Suma)
-    fmt.Println("Resta:", Resta)
-    fmt.Println("Multiplicacion:", Multiplicacion)
-    fmt.Println("Division:", Division)
-    fmt.Println("Modulo:", Modulo)
-    fmt.Println("Incremental:", A)
-    fmt.Println("Decremental:", B)
+		fmt.Println("Suma:", Suma)
+		fmt.Println("Resta:", Resta)
+		fmt.Println("Multiplicacion:", Multiplicacion)
+		fmt.Println("Division:", Division)
+		fmt.Println("Modulo:", Modulo)
+		fmt.Println("Incremental:", A)
+		fmt.Println("Decremental:", B)
 }
 ```
 
@@ -239,20 +241,20 @@ Calcular el área de un rectángulo, trapecio y círculo.
 package main
 
 import (
-    "fmt"
-    "math"
+		"fmt"
+		"math"
 )
 
 func main() {
-    /* Declaracion de variables base */
-    Base := 10
-    BaseMayor := 20
-    Altura := 30
-    Radio := 20
+		/* Declaracion de variables base */
+		Base := 10
+		BaseMayor := 20
+		Altura := 30
+		Radio := 20
 
-    fmt.Println("El área del rectángulo es:", Base*Altura)
-    fmt.Println("El área del trapecio es:", ((BaseMayor+Base)*Altura)/2)
-    fmt.Println("El área del círculo es:", math.Pi*math.Pow(float64(Radio), 2))
+		fmt.Println("El área del rectángulo es:", Base*Altura)
+		fmt.Println("El área del trapecio es:", ((BaseMayor+Base)*Altura)/2)
+		fmt.Println("El área del círculo es:", math.Pi*math.Pow(float64(Radio), 2))
 }
 ```
 
@@ -279,10 +281,10 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println("Hello, World!")
+		fmt.Println("Hello, World!")
 
-    hello()
-    bye()
+		hello()
+		bye()
 }
 ```
 
@@ -294,7 +296,7 @@ package main
 import "fmt"
 
 func hello() {
-    fmt.Println("Hello, friend!")
+		fmt.Println("Hello, friend!")
 }
 ```
 
@@ -306,7 +308,7 @@ package main
 import "fmt"
 
 func bye() {
-    fmt.Println("Goodbye, friend!")
+		fmt.Println("Goodbye, friend!")
 }
 ```
 
@@ -335,42 +337,42 @@ go 1.17
 Estos son los tipos de datos y tipos compuestos que podemos encontrar en Go.
 
 - Basic Types
-  - Integers
-    - Signed
-      - int
-      - int8
-      - int16 
-      - int32 
-      - int64
-    - Unsigned
-      - uint
-      - uint8
-      - uint16
-      - uint32
-      - uint64
-      - uintptr
-  - Floats
-    - float32
-    - float64
-  - Complex Numbers
-    - complex64
-    - complex128
-  - Byte
-  - Rune
-  - String
-  - Boolean
+	- Integers
+		- Signed
+			- int
+			- int8
+			- int16 
+			- int32 
+			- int64
+		- Unsigned
+			- uint
+			- uint8
+			- uint16
+			- uint32
+			- uint64
+			- uintptr
+	- Floats
+		- float32
+		- float64
+	- Complex Numbers
+		- complex64
+		- complex128
+	- Byte
+	- Rune
+	- String
+	- Boolean
 - Composite Types
-  - Collection/Aggregation or Non-Reference Types
-    - Arrays
-    - Structs
-  - Reference Types
-    - Slices
-    - Maps
-    - Channels
-    - Pointers
-    - Function/Methods
-  - Interface
-    - Special case of empty Interface
+	- Collection/Aggregation or Non-Reference Types
+		- Arrays
+		- Structs
+	- Reference Types
+		- Slices
+		- Maps
+		- Channels
+		- Pointers
+		- Function/Methods
+	- Interface
+		- Special case of empty Interface
 
 **Números enteros**
 
