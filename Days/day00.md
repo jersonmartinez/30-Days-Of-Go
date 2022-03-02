@@ -146,7 +146,6 @@ func main() {
     var d bool    //false
 
     fmt.Println("a: ", a, " | b: ", b, " | c: ", c, " | d: ", d)
-}a, Area)
 }
 ```
 
