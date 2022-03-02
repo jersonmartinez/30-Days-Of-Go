@@ -1,4 +1,4 @@
-Navega por la tabla de contenido
+> Navega por la tabla de contenido
 
 - [Introducción](#introducción)
   - [Concepto](#concepto)
