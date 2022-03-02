@@ -4,6 +4,8 @@
   - [Println](#println)
   - [Printf](#printf)
   - [Sprintf](#sprintf)
+- [Variables de entorno](#variables-de-entorno)
+  - [Escribir y leer variables de entorno](#escribir-y-leer-variables-de-entorno)
 - [Funciones](#funciones)
   - [Retornar más de un valor](#retornar-más-de-un-valor)
   - [Recibir solo un valor](#recibir-solo-un-valor)
@@ -134,6 +136,96 @@ Hola, Jerson Martínez
 Para saber el tipo del dato con la librería fmt:
 
 `fmt.Printf("%T\n", variable)`
+
+## Variables de entorno
+
+Son las que están definidas en el sistema y que desde código Go pueden ser accedidas, siempre y cuando se importen las librerías necesarias, en este caso, se utilizará `os`.
+
+```go
+package main
+
+import (
+    "fmt"
+    "os"
+)
+
+func main() {
+
+    var (
+        home   = os.Getenv("HOME")
+        user   = os.Getenv("USER")
+        gopath = os.Getenv("GOPATH")
+    )
+
+    fmt.Println("HOME:", home)
+    fmt.Println("USER:", user)
+    fmt.Println("GOPATH:", gopath)
+}
+```
+
+```bash
+go run environment.go
+
+#Output 
+HOME: C:\Users\Root
+USER: 
+GOPATH: C:\Users\Root\go
+```
+
+### Escribir y leer variables de entorno
+
+Se utiliza la librería `os` y `log`, para registrar la actividad.
+
+```go
+package main
+
+import (
+    "log"
+    "os"
+)
+
+func main() {
+
+    key := "NEW_VAR"
+    value := "This is the first value in this environment value!"
+
+    os.Setenv(key, value)
+
+    val := GetEnvDefault(key, value)
+
+    log.Println("\nEl valor es: " + val)
+
+    os.Unsetenv(key)
+
+    val = GetEnvDefault(key, value)
+
+    log.Println("\nEl valor por default es: " + val)
+
+}
+
+// GetEnvDefault buscar las vars
+func GetEnvDefault(key, defVal string) string {
+    val, ex := os.LookupEnv(key)
+    if !ex {
+        return defVal
+    }
+    return val
+}
+return defVal
+    }
+    return val
+}
+```
+
+```bash
+go run set_and_get_environment.go
+
+#Output
+2022/03/02 15:33:41 
+El valor es: This is the first value in this environment value!
+2022/03/02 15:33:41 
+El valor por default es: This is the first value in this environment value!
+```
 
 ## Funciones
 
@@ -283,6 +375,7 @@ Trapecio: 22.50
 ## Recursos
 
 [fmt package - fmt - pkg.go.dev](https://pkg.go.dev/fmt)
+[Golang: Obtener y establecer variables de entorno con valores predeterminados | zeroidentidad](https://awebytes.wordpress.com/2019/08/25/golang-obtener-y-establecer-variables-de-entorno-con-valores-predeterminados/)
 
 `YouTube Vídeos`
 
