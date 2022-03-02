@@ -1,5 +1,10 @@
 # Introducción
 
+| [Introducción](#Introduction) |
+| ----------------------------- |
+
+
+
 ## Concepto
 
 Golang es un lenguaje de programación de código abierto desarrollado por Google. Es un lenguaje compilado de tipo estático. Este lenguaje admite programación concurrente y también permite ejecutar múltiples procesos simultáneamente.
@@ -368,7 +373,49 @@ Estos son los tipos de datos y tipos compuestos que podemos encontrar en Go.
   - Interface
     - Special case of empty Interface
 
-**Fuentes**
+**Números enteros**
+
+```go
+//int = Depende del OS (32 o 64 bits)
+//int8 = 8bits = -128 a 127
+//int16 = 16bits = -2^15 a 2^15-1
+//int32 = 32bits = -2^31 a 2^31-1
+//int64 = 64bits = -2^63 a 2^63-1
+```
+
+**Optimizar memoria cuando sabemos que el dato siempre será positivo**
+
+```go
+//uint = Depende del OS (32 o 64 bits)
+//uint8 = 8bits = 0 a 127
+//uint16 = 16bits = 0 a 2^15-1
+//uint32 = 32bits = 0 a 2^31-1
+//uint64 = 64bits = 0 a 2^63-1
+```
+
+**Números decimales**
+
+```go
+// float32 = 32 bits = +/- 1.18e^-38 +/- -3.4e^38
+// float64 = 64 bits = +/- 2.23e^-308 +/- -1.8e^308
+```
+
+**Strings y booleanos**
+
+```go
+//string = ""
+//bool = true or false
+```
+
+**Números complejos**
+
+```go
+//Complex64 = Real e Imaginario float32
+//Complex128 = Real e Imaginario float64
+//Ejemplo : c:=10 + 8i
+```
+
+**Recursos**
 
 [Qué es Go o Golang | OpenWebinars](https://openwebinars.net/blog/que-es-go/)
 
