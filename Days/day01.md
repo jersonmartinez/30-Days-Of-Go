@@ -375,6 +375,7 @@ Trapecio: 22.50
 ## Recursos
 
 [fmt package - fmt - pkg.go.dev](https://pkg.go.dev/fmt)
+
 [Golang: Obtener y establecer variables de entorno con valores predeterminados | zeroidentidad](https://awebytes.wordpress.com/2019/08/25/golang-obtener-y-establecer-variables-de-entorno-con-valores-predeterminados/)
 
 `YouTube Vídeos`
