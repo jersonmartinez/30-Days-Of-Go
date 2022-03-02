@@ -3,6 +3,12 @@
     - [Instalando Go con Choco para Windows](#Instalando-Go-con-Choco-para-Windows)
     - [Instalando Go con Choco para Windows](#Instalando-Go-con-Choco-para-Windows)
 
+
+- [Awesome Python](#awesome-python)
+    - [Admin Panels](#admin-panels)
+    - [Algorithms and Design Patterns](#algorithms-and-design-patterns)
+    - [ASGI Servers](#asgi-servers)
+
 # Introducción
 
 ## Concepto
