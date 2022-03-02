@@ -4,7 +4,9 @@
   - [Println](#println)
   - [Printf](#printf)
   - [Sprintf](#sprintf)
-- [Condicionales...](#condicionales)
+- [Funciones](#funciones)
+  - [Retornar más de un valor](#retornar-más-de-un-valor)
+  - [Recibir solo un valor](#recibir-solo-un-valor)
 - [Recursos](#recursos)
 
 ## Paquete fmt
@@ -129,7 +131,154 @@ go run Sprintf.go
 Hola, Jerson Martínez
 ```
 
-## Condicionales...
+Para saber el tipo del dato con la librería fmt:
+
+`fmt.Printf("%T\n", variable)`
+
+## Funciones
+
+Se utilizan para reutilizar código y que todo sea más corto y limpio para leer.
+
+De hecho la función `main`, es la primera que definimos. Dentro de la misma también hemos utilizado otras funciones, como por ejemplo, las de impresión de contenido, por medio de las funciones, `Println`, `Printf `o `Sprintf`, todo esto, con el objetivo de reutilizar la función para evitar escribir las salidas manualmente por medio de métodos complejos.
+
+Ejemplo de funciones: 
+
+```go
+package main
+
+import "fmt"
+
+func suma(A, B int) int           { return A + B }
+func resta(A, B int) int          { return A - B }
+func multiplicacion(A, B int) int { return A * B }
+func division(A, B int) int       { return A / B }
+
+func main() {
+    var A int = 20
+    var B int = 10
+
+    Suma := suma(A, B)
+    Resta := resta(A, B)
+    Multiplicacion := multiplicacion(A, B)
+    Division := division(A, B)
+
+    fmt.Println("Suma:", Suma)
+    fmt.Println("Resta:", Resta)
+    fmt.Println("Multiplicación:", Multiplicacion)
+    fmt.Println("División:", Division)
+}
+```
+
+```bash
+go run calc_aritmetica.go
+
+#Output
+Suma: 30
+Resta: 10
+Multiplicacion: 200
+Division: 2
+```
+
+Se declara la función con la palabra reservada `func`, seguido se le agrega un nombre, además, entre parentesis se le pasan parámetros, donde si más de un parámetro, en una secuencia tienen el mismo tipo de dato, este solo se resume a una vez.
+
+```go
+func suma(A, B int)
+```
+
+Si esta función retorna algún valor, se definen la cantidad de variables y su tipo de dato, por ejemplo: 
+
+```go
+func cuadrado(n int) (x, y int)
+```
+
+### Retornar más de un valor
+
+Se deja el ejemplo del cuadrado, donde se pasa un valor y se busca retornar ese mismo valor y el cuadrado a la vez.
+
+```go
+package main
+
+import "fmt"
+
+func cuadrado(n int) (x, y int) {
+    return n, n * n
+}
+
+func main() {
+    var N int = 20
+
+    Value, Cuadrado := cuadrado(N)
+    fmt.Printf("Value: %d, Cuadrado %d\n", Value, Cuadrado)
+
+    /*Solo obtiene un valor*/
+    _, Value = cuadrado(N)
+    fmt.Printf("Cuadrado: %d\n", Value)
+}
+```
+
+```bash
+go run double_return.go
+
+#Output 
+Value: 20, Cuadrado 400
+Cuadrado: 400
+```
+
+Se muestra como obtener los dos valores, cada uno en la variable correspondiente.
+
+```go
+Value, Cuadrado := cuadrado(N)
+fmt.Printf("Value: %d, Cuadrado %d\n", Value, Cuadrado)
+```
+
+### Recibir solo un valor
+
+Si tenemos funciones donde retornarmos más de un valor, pero solo necesitamos recibir uno de ellos, es tan sencillo como omitir el valor que viene en cierto orden con el caracter `_`.
+
+```go
+/*Solo obtiene un valor*/
+_, Value = cuadrado(N)
+fmt.Printf("Cuadrado: %s\n", Value)
+```
+
+**Ejercicio**
+
+Obtener el área de un círculo, rectángulo y trapecio usando funciones.
+
+```go
+package main
+
+import (
+    "fmt"
+    "math"
+)
+
+func áreaCírculo(radio float64) float64 {
+    return math.Pi * radio * radio
+}
+func áreaRectángulo(base, altura float64) float64 {
+    return base * altura
+}
+
+func áreaTrapecio(B, b, h float64) float64 {
+    return h * (B + b) / 2
+}
+
+func main() {
+    fmt.Printf("Círculo: %.2f \n", áreaCírculo(2))
+    fmt.Printf("Rectángulo: %.2f \n", áreaRectángulo(5, 10))
+    fmt.Printf("Trapecio: %.2f \n", áreaTrapecio(10, 5, 3))
+}
+```
+
+```bash
+go run area_rectangulo_circulo_trapecio.go
+
+#Output
+Círculo: 12.57 
+Rectángulo: 50.00 
+Trapecio: 22.50
+```
 
 ## Recursos
 
