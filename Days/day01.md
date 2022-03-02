@@ -378,6 +378,8 @@ Trapecio: 22.50
 
 [Golang: Obtener y establecer variables de entorno con valores predeterminados | zeroidentidad](https://awebytes.wordpress.com/2019/08/25/golang-obtener-y-establecer-variables-de-entorno-con-valores-predeterminados/)
 
+[Effective Go - The Go Programming Language](https://go.dev/doc/effective_go#constants)
+
 `YouTube Vídeos`
 
 [✅¿Cual es el mejor Framework web de Golang? - YouTube](https://www.youtube.com/watch?v=Pq6rkq7iuHM)
