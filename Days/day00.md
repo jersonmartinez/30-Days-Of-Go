@@ -1,9 +1,11 @@
 # Introducción
 
-| [Introducción](#Introduction) |
-| ----------------------------- |
+| - [Introducción](#Introducción) |
+| ------------------------------- |
 
+    - [Concepto](#Concepto)
 
+    - [Instalando Go con Choco para Windows](#Instalando Go con Choco para Windows)
 
 ## Concepto
 
