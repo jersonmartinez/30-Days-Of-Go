@@ -18,7 +18,7 @@ Estaré siguiendo la siguiente [ruta de aprendizaje de Go](https://roadmap.sh/go
 
 [✔️] ♾️ 1 > [Package fmt and functions](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day01.md)
 
-[] ♾️ 1 > [Conditionals, Arrays, packages, imports and exports...](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day01.md)
+[] ♾️ 2 > [Conditionals, Arrays, packages, imports and exports...](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day02.md)
 
 ## Going Deeper (Profundizando)
 
