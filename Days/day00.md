@@ -1,9 +1,9 @@
-# Introducción
-
 - [Introducción](#Introduccion)
     - [Concepto](#concepto)
     - [Instalando Go con Choco para Windows](#Instalando-Go-con-Choco-para-Windows)
     - [Instalando Go con Choco para Windows](#Instalando-Go-con-Choco-para-Windows)
+
+# Introducción
 
 ## Concepto
 
