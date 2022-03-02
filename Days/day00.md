@@ -1,3 +1,5 @@
+Navega por la tabla de contenido
+
 - [Introducción](#introducción)
   - [Concepto](#concepto)
   - [Instalando Go con Choco para Windows](#instalando-go-con-choco-para-windows)
