@@ -20,6 +20,8 @@ Estaré siguiendo la siguiente [ruta de aprendizaje de Go](https://roadmap.sh/go
 
 [✔️] ♾️ 2 > [Go docs, Conditionals and Functions](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day02.md)
 
+[  ] ♾️ 3 > [Arrays, Structs and Pointers...](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day03.md)
+
 ## Going Deeper (Profundizando)
 
 ## Building CLIs
