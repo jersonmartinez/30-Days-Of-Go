@@ -1,17 +1,17 @@
 > Navega por la tabla de contenido
 
 - [Forma de ver documentación](#forma-de-ver-documentación)
-  - [Go doc](#go-doc)
+	- [Go doc](#go-doc)
 - [Loops](#loops)
 - [Condicionales](#condicionales)
-  - [Operadores lógicos y de comparación](#operadores-lógicos-y-de-comparación)
-    - [Operadores de comparación](#operadores-de-comparación)
-    - [Operadores lógicos](#operadores-lógicos)
-      - [Operador AND:](#operador-and)
-      - [Operador OR:](#operador-or)
-      - [Operador NOT:](#operador-not)
-  - [Primeros pasos](#primeros-pasos)
-  - [Condicionales usando funciones](#condicionales-usando-funciones)
+	- [Operadores lógicos y de comparación](#operadores-lógicos-y-de-comparación)
+		- [Operadores de comparación](#operadores-de-comparación)
+		- [Operadores lógicos](#operadores-lógicos)
+			- [Operador AND:](#operador-and)
+			- [Operador OR:](#operador-or)
+			- [Operador NOT:](#operador-not)
+	- [Primeros pasos](#primeros-pasos)
+	- [Condicionales usando funciones](#condicionales-usando-funciones)
 - [Recursos](#recursos)
 
 ## Forma de ver documentación
@@ -20,11 +20,11 @@
 
 Este es un apartado donde muestro enlaces a fuentes oficinales de Go para documentarse sobre el lenguaje. [Go Docs](https://pkg.go.dev/).
 
-![Go Docs](C:\Users\Root\OneDrive\Documentos\Projects\Repositories\30-Days-Of-Go\Days\02_Day\src\2022-03-03-21-58-48-image.png)
+![Go Docs](https://raw.githubusercontent.com/jersonmartinez/30-Days-Of-Go/main/Days/02_Day_Loops_Functions/src/2022-03-03-21-58-48-image.png)
 
 Desde ahí es posible documentarse sobre cualquier paquete de Go. Por ejemplo, buscando sobre el paquete `fmt`.
 
-![](C:\Users\Root\OneDrive\Documentos\Projects\Repositories\30-Days-Of-Go\Days\02_Day\src\2022-03-03-22-03-49-image.png)
+![Go Docs](https://raw.githubusercontent.com/jersonmartinez/30-Days-Of-Go/main/Days/02_Day_Loops_Functions/src/2022-03-03-22-03-49-image.png)
 
 ## Loops
 
