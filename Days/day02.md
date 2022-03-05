@@ -20,11 +20,11 @@
 
 Este es un apartado donde muestro enlaces a fuentes oficinales de Go para documentarse sobre el lenguaje. [Go Docs](https://pkg.go.dev/).
 
-![Go Docs](https://raw.githubusercontent.com/jersonmartinez/30-Days-Of-Go/main/Days/02_Day_Loops_Functions/src/2022-03-03-21-58-48-image.png)
+![Go Docs](https://raw.githubusercontent.com/jersonmartinez/30-Days-Of-Go/main/Days/02_Day_Loops_Functions_Conditionals/src/2022-03-03-21-58-48-image.png)
 
 Desde ahí es posible documentarse sobre cualquier paquete de Go. Por ejemplo, buscando sobre el paquete `fmt`.
 
-![Go Docs](https://raw.githubusercontent.com/jersonmartinez/30-Days-Of-Go/main/Days/02_Day_Loops_Functions/src/2022-03-03-22-03-49-image.png)
+![Go Docs](https://raw.githubusercontent.com/jersonmartinez/30-Days-Of-Go/main/Days/02_Day_Loops_Functions_Conditionals/src/2022-03-03-22-03-49-image.png)
 
 ## Loops
 
