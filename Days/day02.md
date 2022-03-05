@@ -1,17 +1,17 @@
 > Navega por la tabla de contenido
 
 - [Forma de ver documentación](#forma-de-ver-documentación)
-	- [Go doc](#go-doc)
+  - [Go doc](#go-doc)
 - [Loops](#loops)
 - [Condicionales](#condicionales)
-	- [Operadores lógicos y de comparación](#operadores-lógicos-y-de-comparación)
-		- [Operadores de comparación](#operadores-de-comparación)
-		- [Operadores lógicos](#operadores-lógicos)
-			- [Operador AND:](#operador-and)
-			- [Operador OR:](#operador-or)
-			- [Operador NOT:](#operador-not)
-	- [Primeros pasos](#primeros-pasos)
-	- [Condicionales usando funciones](#condicionales-usando-funciones)
+  - [Operadores lógicos y de comparación](#operadores-lógicos-y-de-comparación)
+    - [Operadores de comparación](#operadores-de-comparación)
+    - [Operadores lógicos](#operadores-lógicos)
+      - [Operador AND:](#operador-and)
+      - [Operador OR:](#operador-or)
+      - [Operador NOT:](#operador-not)
+  - [Primeros pasos](#primeros-pasos)
+  - [Condicionales usando funciones](#condicionales-usando-funciones)
 - [Recursos](#recursos)
 
 ## Forma de ver documentación
@@ -98,39 +98,39 @@ package main
 import "fmt"
 
 func main() {
-	/*
-		Imprime los números del 1 al 3
-	*/
-	i := 1
-	for i <= 3 {
-		fmt.Println(i)
-		i = i + 1
-	}
+    /*
+        Imprime los números del 1 al 3
+    */
+    i := 1
+    for i <= 3 {
+        fmt.Println(i)
+        i = i + 1
+    }
 
-	/*
-		Imprime los números del 7 al 9
-	*/
-	for j := 7; j <= 9; j++ {
-		fmt.Println(j)
-	}
+    /*
+        Imprime los números del 7 al 9
+    */
+    for j := 7; j <= 9; j++ {
+        fmt.Println(j)
+    }
 
-	/*
-		Realiza un ciclo infinito, sin embargo, lo detiene a la primera.
-	*/
-	for {
-		fmt.Println("loop")
-		break
-	}
+    /*
+        Realiza un ciclo infinito, sin embargo, lo detiene a la primera.
+    */
+    for {
+        fmt.Println("loop")
+        break
+    }
 
-	/*
-		Imprime solo números impares, ya que omite los números pares por medio del módulo.
-	*/
-	for n := 0; n <= 5; n++ {
-		if n%2 == 0 {
-			continue
-		}
-		fmt.Println(n)
-	}
+    /*
+        Imprime solo números impares, ya que omite los números pares por medio del módulo.
+    */
+    for n := 0; n <= 5; n++ {
+        if n%2 == 0 {
+            continue
+        }
+        fmt.Println(n)
+    }
 }
 ```
 
@@ -148,8 +148,6 @@ loop
 3
 5
 ```
-
-
 
 ## Condicionales
 
@@ -210,23 +208,23 @@ import "fmt"
 
 func main() {
 
-	if 7%2 == 0 {
-		fmt.Println("7 es par")
-	} else {
-		fmt.Println("7 es impar")
-	}
+    if 7%2 == 0 {
+        fmt.Println("7 es par")
+    } else {
+        fmt.Println("7 es impar")
+    }
 
-	if 8%4 == 0 {
-		fmt.Println("8 es divisible de 4")
-	}
+    if 8%4 == 0 {
+        fmt.Println("8 es divisible de 4")
+    }
 
-	if num := 9; num < 0 {
-		fmt.Println(num, "es negativa")
-	} else if num < 10 {
-		fmt.Println(num, "tiene 1 dígito")
-	} else {
-		fmt.Println(num, "tiene multiples dígitos")
-	}
+    if num := 9; num < 0 {
+        fmt.Println(num, "es negativa")
+    } else if num < 10 {
+        fmt.Println(num, "tiene 1 dígito")
+    } else {
+        fmt.Println(num, "tiene multiples dígitos")
+    }
 }
 ```
 
@@ -247,24 +245,24 @@ package main
 import "fmt"
 
 func main() {
-	if isPair(6) {
-		fmt.Println("Número par")
-	} else {
-		fmt.Println("Número impar")
-	}
-	if isValidUser("Antonio5", "Password") {
-		fmt.Println("Credentiales válidas")
-	} else {
-		fmt.Println("Credentiales inválidas")
-	}
+    if isPair(6) {
+        fmt.Println("Número par")
+    } else {
+        fmt.Println("Número impar")
+    }
+    if isValidUser("Antonio5", "Password") {
+        fmt.Println("Credentiales válidas")
+    } else {
+        fmt.Println("Credentiales inválidas")
+    }
 }
 
 func isPair(num int) bool {
-	return num%2 == 0
+    return num%2 == 0
 }
 
 func isValidUser(userName, pass string) bool {
-	return userName == "Antonio" && pass == "Password"
+    return userName == "Antonio" && pass == "Password"
 }
 ```
 
@@ -276,7 +274,39 @@ Número par
 Credentiales inválidas
 ```
 
-Continuará...
+Verificar si hay errores y registrar un log en el sistema
+
+```go
+package main
+
+import (
+    "fmt"
+    "log"
+    "strconv"
+)
+
+func main() {
+    value, err := strconv.Atoi("100")
+
+    if err != nil {
+        fmt.Println("Error:", err)
+    } else {
+        fmt.Println("Value:", value)
+        log.Fatal(value)
+    }
+}
+```
+
+```bash
+go run conditional_error.go
+
+#Output
+Value: 100
+2022/03/04 22:53:04 100
+exit status 1
+```
+
+En caso de que la conversión de la cadena resultase en un error, este devolvería "Error + contenido del error". De otro modo, retorna el valor correspondiente. En el `else` he devuelto consigo un log con severidad Fatal, que envía un mensaje que se torna de la siguiente manera: `2022/03/04 22:53:04 100` .
 
 ## Recursos
 
