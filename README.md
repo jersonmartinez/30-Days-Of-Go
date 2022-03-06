@@ -12,7 +12,7 @@ Ciertamente es un reto para mi el hecho de mantener una racha de 30 días aprend
 
 Estaré siguiendo la siguiente [ruta de aprendizaje de Go](https://roadmap.sh/golang).
 
-#### Horario
+#### Horario de estudio
 
 > Estudiaré y documentaré de Lunes a Sábado.
 > Enseñaré el contenido por medio de vídeos tutoriales y estos los grabaré los domingos.
