@@ -17,8 +17,7 @@
 
 ### Introducción
 
-Una **array**, *arreglo o matriz*, es una 
-colección de elementos del mismo tipo con un tamaño pre-fijado, aunque no siempre tiene que ser así tal y como veremos más adelante. 
+Una **array**, *arreglo o matriz*, es una colección de elementos del mismo tipo con un tamaño pre-fijado, aunque no siempre tiene que ser así tal y como veremos más adelante. 
 
 ### Características
 

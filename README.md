@@ -22,7 +22,9 @@ Estaré siguiendo la siguiente [ruta de aprendizaje de Go](https://roadmap.sh/go
 
 [✔️] ♾️ 3 > [Switch and Keywords](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day03.md)
 
-[ ] ♾️ 4 > [Arrays, Slices and Maps](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day04.md)
+[✔️] ♾️ 4 > [Arrays](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day04.md)
+
+[ ] ♾️ 5 > [Slices and Maps](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day05.md)
 
 ## Going Deeper (Profundizando)
 
