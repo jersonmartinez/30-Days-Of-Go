@@ -30,7 +30,9 @@ Estaré siguiendo la siguiente [ruta de aprendizaje de Go](https://roadmap.sh/go
 
 [✔️] ♾️ 4 > [Arrays](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day04.md)
 
-[ ] ♾️ 5 > [Slices and Maps](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day05.md)
+[✔️] ♾️ 5 > [Slices](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day05.md)
+
+[ ] ♾️ 6 > [Maps]([30-Days-Of-Go/day05.md at main · jersonmartinez/30-Days-Of-Go · GitHub](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day06.md)
 
 ## Going Deeper (Profundizando)
 
