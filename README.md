@@ -14,9 +14,9 @@ Estaré siguiendo la siguiente [ruta de aprendizaje de Go](https://roadmap.sh/go
 
 #### Horario de estudio
 
-> Estudiaré y documentaré de Lunes a Sábado.
+> Estudiaré y documentaré de Lunes a Viernes.
 
-> Enseñaré el contenido por medio de vídeos tutoriales y estos los grabaré los domingos.
+> Al finalizar el reto, haré contenido en forma de vídeos tutoriales y los inscrustaré en este mismo documento.
 
 ## Learn the Basics (Aprendiendo lo básico)
 
