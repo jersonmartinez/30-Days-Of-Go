@@ -4,9 +4,9 @@
   - [Concepto](#concepto)
   - [Instalando Go con Choco para Windows](#instalando-go-con-choco-para-windows)
   - [Instalando Go en GNU/Linux (Ubuntu)](#instalando-go-en-gnulinux-ubuntu)
-  - [Basic Syntax](#basic-syntax)
-  - [Variables and declaration](#variables-and-declaration)
-  - [Data Types](#data-types)
+  - [Sintaxis básica de Go](#sintaxis-básica-de-go)
+  - [Variables y declaración](#variables-y-declaración)
+  - [Tipos de datos](#tipos-de-datos)
   - [Recursos](#recursos)
 
 # Introducción
@@ -23,7 +23,7 @@ En mi caso, estoy usando Windows como sistema operativo base, por lo que me ser�
 
 **Instalar Chocolatey**
 
-Esta se instala desde PowerShell.
+Esta se instala desde PowerShell mediante la siguiente instrucción: 
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -47,7 +47,7 @@ choco uninstall golang
 
 ## Instalando Go en GNU/Linux (Ubuntu)
 
-Las siguientes instrucciones son obtenidas de la documentación oficial de [go.dev]([Download and install - The Go Programming Language](https://go.dev/doc/install)).
+Las siguientes instrucciones son obtenidas de la documentación oficial de [go.dev](https://go.dev/doc/install).
 
 ```bash
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.17.7.linux-amd64.tar.gz
@@ -65,7 +65,7 @@ En ambos casos, para comprobar que la instalación se haya resuelto correctament
  go version
 ```
 
-## Basic Syntax
+## Sintaxis básica de Go
 
 Escribiéndo el `Hello, World!` como el clásico ejercicio inicial.
 
@@ -85,13 +85,13 @@ func main() {
 }
 ```
 
-Compilación
+El proceso de compilación es el siguiente: 
 
 ```bash
 go build hello_world.go
 ```
 
-Ejecución
+La ejecución se realiza por medio de la instrucción `go run`. 
 
 ```bash
 # Ejecutar sin compilar.
@@ -104,11 +104,11 @@ go run hello_world.go
 Hello, World!
 ```
 
-## Variables and declaration
+## Variables y declaración
 
 Las variables sirven para asociar una tira de datos con un sector de la memoria, siendo esta, un identificador. En palabras sencillas, las variables guardan datos.
 
-Definir variables con las palabra reservada `var` y `const`.
+Definir variables con las palabras reservadas `var` y `const`.
 
 **Declarando constantes:**
 
@@ -170,7 +170,7 @@ a:  0  | b:  0  | c:    | d:  false
 
 **Ejercicio**
 
-Calcular el cuadrado e imprimirlo.
+Calcular el área de un cuadrado e imprimirlo.
 
 ```go
 package main
@@ -194,7 +194,7 @@ El área del cuadrado es: 100
 
 **Ejercicio**
 
-Operación aritmética.
+Realizar operaciones aritméticas, como sumar, restar, multiplicar y dividir.
 
 ```go
 package main
@@ -274,9 +274,7 @@ El área del círculo es: 1256.6370614359173
 
 **Ejercicio**
 
-Crear un saludo modular. 
-
-Para ello, crearemos 3 ficheros: 
+Crear un saludo modular. Para este escenario, crearemos 3 ficheros: 
 
 - main.go
 
@@ -337,7 +335,7 @@ module Package/main
 go 1.17
 ```
 
-## Data Types
+## Tipos de datos
 
 Estos son los tipos de datos y tipos compuestos que podemos encontrar en Go.
 
