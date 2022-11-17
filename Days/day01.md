@@ -231,7 +231,7 @@ El valor por default es: This is the first value in this environment value!
 
 Se utilizan para reutilizar código y que todo sea más corto y limpio para leer.
 
-De hecho la función `main`, es la primera que definimos. Dentro de la misma también hemos utilizado otras funciones, como por ejemplo, las de impresión de contenido, por medio de las funciones, `Println`, `Printf `o `Sprintf`, todo esto, con el objetivo de reutilizar la función para evitar escribir las salidas manualmente por medio de métodos complejos.
+De hecho, la función `main`, es la primera que definimos. Dentro de la misma también hemos utilizado otras funciones, como, por ejemplo, las de impresión de contenido, por medio de las funciones, `Println`, `Printf `o `Sprintf`, todo esto, con el objetivo de reutilizar la función para evitar escribir las salidas manualmente por medio de métodos complejos.
 
 Ejemplo de funciones: 
 
@@ -325,7 +325,7 @@ fmt.Printf("Value: %d, Cuadrado %d\n", Value, Cuadrado)
 
 ### Recibir solo un valor
 
-Si tenemos funciones donde retornarmos más de un valor, pero solo necesitamos recibir uno de ellos, es tan sencillo como omitir el valor que viene en cierto orden con el caracter `_`.
+Si tenemos funciones donde retornaremos más de un valor, pero solo necesitamos recibir uno de ellos, es tan sencillo como omitir el valor que viene en cierto orden con el caracter `_`.
 
 ```go
 /*Solo obtiene un valor*/
@@ -374,6 +374,8 @@ Trapecio: 22.50
 
 ## Recursos
 
+[Inicia tu carrera de programador en Go](https://www.crashell.com/estudio/inicia_tu_carrera_de_programador_en_go)
+
 [fmt package - fmt - pkg.go.dev](https://pkg.go.dev/fmt)
 
 [Golang: Obtener y establecer variables de entorno con valores predeterminados | zeroidentidad](https://awebytes.wordpress.com/2019/08/25/golang-obtener-y-establecer-variables-de-entorno-con-valores-predeterminados/)
@@ -382,6 +384,6 @@ Trapecio: 22.50
 
 `YouTube Vídeos`
 
-[✅¿Cual es el mejor Framework web de Golang? - YouTube](https://www.youtube.com/watch?v=Pq6rkq7iuHM)
+[¿Cual es el mejor Framework web de Golang? - YouTube](https://www.youtube.com/watch?v=Pq6rkq7iuHM)
 
 [CÓMO hacer un CRUD ► 🎁 crud GOlang MySql PASO a PASO - YouTube](https://www.youtube.com/watch?v=G58gN0lIbyI)
