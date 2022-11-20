@@ -1,5 +1,7 @@
 # 30-Days-Of-Go
 
+![imagen](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/35/Iniciate-en-Go.png)
+
 Este repositorio es usado como documentación del conocimiento que vaya adquiriendo sobre el lenguaje de programación Go.
 
 El objetivo del mismo es que otros usuarios puedan hacerse de esta documentación y conocer más respectivamente, además de poder compartir, corregir y copiar contenido que este contenga.
