@@ -11,6 +11,8 @@
 
 # Introducción
 
+![imagen]([https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/35/Iniciate-en-Go.png](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/36/fmt-package-variables-entorno-funciones.png))
+
 ## Concepto
 
 Golang es un lenguaje de programación de código abierto desarrollado por Google. Es un lenguaje compilado de tipo estático. Este lenguaje admite programación concurrente y también permite ejecutar múltiples procesos simultáneamente.
