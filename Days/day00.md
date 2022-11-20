@@ -1,3 +1,5 @@
+![imagen](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/35/Iniciate-en-Go.png)
+
 > Navega por la tabla de contenido
 
 - [Introducción](#introducción)
@@ -10,8 +12,6 @@
   - [Recursos](#recursos)
 
 # Introducción
-
-![imagen](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/35/Iniciate-en-Go.png)
 
 ## Concepto
 
