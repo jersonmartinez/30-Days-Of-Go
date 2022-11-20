@@ -1,3 +1,5 @@
+![image](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/38/switch-keywords-in-go.png)
+
 > Navega por la tabla de contenido
 
 - [Condicionales](#condicionales)
