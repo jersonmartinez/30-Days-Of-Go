@@ -1,3 +1,5 @@
+![imagen](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/36/fmt-package-variables-entorno-funciones.png)
+
 > Navega por la tabla de contenido
 
 - [Paquete fmt](#paquete-fmt)
@@ -10,8 +12,6 @@
   - [Retornar más de un valor](#retornar-más-de-un-valor)
   - [Recibir solo un valor](#recibir-solo-un-valor)
 - [Recursos](#recursos)
-
-![imagen](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/36/fmt-package-variables-entorno-funciones.png)
 
 ## Paquete fmt
 
