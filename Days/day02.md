@@ -1,3 +1,5 @@
+![image](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/37/go-docs-validaciones-iteraciones.png)
+
 > Navega por la tabla de contenido
 
 - [Forma de ver documentación](#forma-de-ver-documentación)
