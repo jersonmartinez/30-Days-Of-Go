@@ -11,6 +11,8 @@
   - [Recibir solo un valor](#recibir-solo-un-valor)
 - [Recursos](#recursos)
 
+![imagen](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/36/fmt-package-variables-entorno-funciones.png)
+
 ## Paquete fmt
 
 Ciertamente Go se parece mucho a C, puesto que el paquete fmt tiene bastante similitud con stdio.h de C. En ambos casos, implementan el formato de entrada y salida de datos. Igualmente, te sorprenderás de las similitudes de Go con C.
