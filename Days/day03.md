@@ -16,7 +16,7 @@
 
 ## Condicionales
 
-Anteriormente hemos visto cómo hacer condicionales con `if`, ahora le toca a nuestro amigo `switch`.
+[Anteriormente](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day02.md) hemos visto cómo hacer condicionales con `if`, ahora le toca a nuestro amigo `switch`.
 
 ### Switch
 
@@ -24,7 +24,7 @@ Te mostraré por medio de ejemplos prácticos, el uso de este tipo de condiciona
 
 #### Primero, segundo o tercero
 
-Este es muy fácil de entender, se trata de que un valor inicial i=2, se verfique y entre en la segunda condición y seguido imprima un string.
+Este es muy fácil de entender, se trata de que un valor inicial `i=2`, se verifique y entre en la segunda condición y seguido imprima un _string_.
 
 ```go
 package main
@@ -115,7 +115,7 @@ It's a weekday: Friday
 
 #### Tipo de dato de una variable
 
-La idea es pasar una variable al switch y que este verifique qué tipo de dato es. Este ejercicio es muy interesante, ya que creamos una función anónima, almacenada en  una variable, donde se le pasa una interfaz cómo parámetro.
+La idea es pasar una variable al `switch` y que este verifique qué tipo de dato es. Este ejercicio es muy interesante, ya que creamos una función anónima, almacenada en  una variable, donde se le pasa una interfaz cómo parámetro.
 
 ```go
 package main
@@ -153,7 +153,7 @@ Don't know type string
 
 #### Contador de vocales
 
-Este me parece que no necesita explicación, pues se trata de contar las vocales que hay en un frase, además de obtener la cantidad de repetición de cada vocal.
+Este me parece que no necesita explicación, pues se trata de contar las vocales que hay en una frase, además de obtener la cantidad de repetición de cada vocal.
 
 ```go
 package main
@@ -242,7 +242,7 @@ End
 0
 ```
 
-Todo lo que está para ejecutarse con `defer`, este lo guarda y lo resuelve hasta el final, cabe destacar que si hay varios `defer` definidos, tal y como sucede en este ejemplo, este se almacena en una cola `LIFO` (Last in First Out / Último en entrar, primero en salir).
+Todo lo que está para ejecutarse con `defer`, este lo guarda y lo resuelve hasta el final, cabe destacar que si hay varios `defer` definidos, tal y como sucede en este ejemplo, este se almacena en una cola `LIFO` (_Last in First Out_ / Último en entrar, primero en salir).
 
 ```go
 package main
@@ -389,7 +389,11 @@ es 2
 Hola
 ```
 
+Estos han sido algunos ejemplos del modo de uso de las palabras claves `defer`, `continue` y `break` en Go, además de profundizar en la forma de hacer validaciones con la instrucción `switch`.
+
 ## Recursos
+
+[Inicia tu carrera de programador en Go](https://www.crashell.com/estudio/inicia_tu_carrera_de_programador_en_go)
 
 [Go by Example: Switch](https://gobyexample.com/switch)
 
