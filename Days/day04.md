@@ -4,7 +4,7 @@
   - [Introducción](#introducción)
   - [Características](#características)
 - [Ejercicios](#ejercicios)
-  - [Elementos numéricos (Int)](#elementos-numéricos-int)
+  - [Elementos numéricos (_Int_)](#elementos-numéricos-int)
   - [Elementos de cadenas (Strings)](#elementos-de-cadenas-strings)
   - [Sin definición de elementos](#sin-definición-de-elementos)
   - [Asignar valores desde la definición](#asignar-valores-desde-la-definición)
@@ -17,7 +17,7 @@
 
 ### Introducción
 
-Una **array**, *arreglo o matriz*, es una colección de elementos del mismo tipo con un tamaño pre-fijado, aunque no siempre tiene que ser así tal y como veremos más adelante. 
+Un _array_, arreglo o matriz, es una colección de elementos del mismo tipo con un tamaño pre-fijado, aunque no siempre tiene que ser así tal y como veremos más adelante. 
 
 ### Características
 
@@ -33,7 +33,7 @@ Una **array**, *arreglo o matriz*, es una colección de elementos del mismo tipo
 
 ## Ejercicios
 
-### Elementos numéricos (Int)
+### Elementos numéricos (_Int_)
 
 Se define un arreglo, indicando la cantidad de elementos que este tendrá, sin embargo, si en la asociación de los valores hay alguno que no se le agrega, Go por omisión lo asigna a 0.
 
@@ -60,7 +60,7 @@ Element [3]: 40
 
 ### Elementos de cadenas (Strings)
 
-Definimos un primer arreglo de 2 elementos, donde el primero contendrá el valor "Hello" y el segundo "world"; esto mismo para el segundo arreglo, solo que con algunas diferencias en su definición.
+Definimos un primer arreglo de 2 elementos, donde el primero contendrá el valor "_Hello_" y el segundo "_world_"; esto mismo para el segundo arreglo, solo que con algunas diferencias en su definición.
 
 ```go
 package main
@@ -97,7 +97,7 @@ Hello World
 
 ### Sin definición de elementos
 
-Se definen 3 arreglos, dos donde se almacenan números enteros y el tercero donde se almacenan strings. La idea principal es ver que en el índice, donde se anuncia de cuántos elementos será el arreglo, está señalado con puntos suspensivos `...`, indicando que se desconoce el número de elementos, por ende, tendrá que ajustarse a los valores que se pasan.
+Se definen 3 arreglos, dos donde se almacenan números enteros y el tercero donde se almacenan _strings_. La idea principal es ver que, en el índice, donde se anuncia de cuántos elementos será el arreglo, está señalado con puntos suspensivos `...`, indicando que se desconoce el número de elementos, por ende, tendrá que ajustarse a los valores que se pasan.
 
 ```go
 package main
@@ -128,7 +128,7 @@ go run without_elements.go
 
 ### Asignar valores desde la definición
 
-Se declara un arreglo de 5 elementos, por ende serán: [0, 1, 2, 3, 4]. Además, se agregan valores tanto para el elemento 1 y 2. Esto se hace directamente como un sistema clave - valor: `1: 10, 2: 40`.
+Se declara un arreglo de 5 elementos, por ende, serán: [0, 1, 2, 3, 4]. Además, se agregan valores tanto para el elemento 1 y 2. Esto se hace directamente como un sistema clave - valor: `1: 10, 2: 40`.
 
 ```go
 package main
