@@ -1,3 +1,5 @@
+![image](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/42/uso-de-arrays-en-go.png)
+
 > Navega por la tabla de contenido
 
 - [Arrays](#arrays)
