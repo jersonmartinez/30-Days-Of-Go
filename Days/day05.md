@@ -1,3 +1,5 @@
+![image](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/43/uso-de-slices-en-go.png)
+
 > Navega por la tabla de contenido
 
 - [Slices](#slices)
