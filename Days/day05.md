@@ -14,7 +14,7 @@
       - [Eliminar valores](#eliminar-valores)
       - [Creando función para remover elemento](#creando-función-para-remover-elemento)
     - [Copy](#copy)
-      - [Copiar valores de un slice a otro](#copiar-valores-de-un-slice-a-otro)
+      - [Copiar valores de un _slice_ a otro](#copiar-valores-de-un-slice-a-otro)
   - [Slice of slices](#slice-of-slices)
   - [Recursos](#recursos)
 
@@ -22,9 +22,9 @@
 
 ## Introducción
 
-Si bien los arreglos son una parte importante del lenguaje, es mas común el uso de slices. Un slice en cierta forma es un segmento de un arreglo.
+Si bien los arreglos son una parte importante del lenguaje, es mas común el uso de slices. Un _slice_ en cierta forma es un segmento de un arreglo.
 
-El uso de arreglos tiene ciertas limitaciones, la mas importante es que una vez que se alcanza la capacidad del arreglo, no es posible agregar mas valores a este. En ese sentido los slices son mas flexibles. Es posible agregar, remover y copiar elementos de un slice a otro.
+El uso de arreglos tiene ciertas limitaciones, la mas importante es que una vez que se alcanza la capacidad del arreglo, no es posible agregar mas valores a este. En ese sentido los slices son mas flexibles. Es posible agregar, remover y copiar elementos de un _slice_ a otro.
 
 ## Uso de Slices
 
@@ -149,7 +149,7 @@ After appending...
 
 Como ya mencionamos, un arreglo es una colección de valores del mismo  tipo que tiene una longitud fija y no puede tener un método para cambiar su tamaño.
 
-Por otro lado un slice es una abstracción de un arreglo, es decir que utiliza un arreglo tras bambalinas para funcionar, pero provee ciertas funciones adicionales.
+Por otro lado un _slice_ es una abstracción de un arreglo, es decir que utiliza un arreglo tras bambalinas para funcionar, pero provee ciertas funciones adicionales.
 
 ```go
 package main
@@ -181,7 +181,7 @@ go run append_using_loop_for.go
 
 Como ya mencionamos, un arreglo es una colección de valores del mismo tipo que tiene una longitud fija y no puede tener un método para cambiar su tamaño.
 
-Por otro lado un slice es una abstracción de un arreglo, es decir que utiliza un arreglo tras bambalinas para funcionar, pero provee ciertas funciones adicionales.
+Por otro lado un _slice_ es una abstracción de un arreglo, es decir que utiliza un arreglo tras bambalinas para funcionar, pero provee ciertas funciones adicionales.
 
 ```go
 package main
@@ -238,11 +238,11 @@ go run delete_slice_function.go
 
 ### Copy
 
-Para copiar todos los elementos de un slice existe la función `copy`.  Para copiar valores de un slice a otro, un slice puede ser inicializado mediante otro del mismo tipo, ya que no es posible copiar los valores de un slice de enteros a otro de cadenas de strings. Una copia implica que los valores permanecen aun si el slice original es modificado o destruido.
+Para copiar todos los elementos de un _slice_ existe la función `copy`.  Para copiar valores de un _slice_ a otro, un _slice_ puede ser inicializado mediante otro del mismo tipo, ya que no es posible copiar los valores de un _slice_ de enteros a otro de cadenas de strings. Una copia implica que los valores permanecen aun si el _slice_ original es modificado o destruido.
 
-#### Copiar valores de un slice a otro
+#### Copiar valores de un _slice_ a otro
 
-- Se crea un slice llamado `OS`.
+- Se crea un _slice_ llamado `OS`.
 - Se genera un contenedor para crear una copia, con la dimensión de `OS` mediante `make([]string, len(OS))`.
 - Se copian los valores de `OS` en `OS_Copy` mediante `copy(OS_Copy, OS)`.
 - Se elimina el elemento `Debian` de `OS`.
@@ -289,11 +289,11 @@ import (
 // main function
 func main() {
 
-    /*Declarando un slice bidimensional*/
+    /*Declarando un _slice_ bidimensional*/
     slice_of_slices := make([][]int, 3)
 
     for i := 0; i < 3; i++ {
-        /*Declarando un slice dentro de cada elemento del slice padre*/
+        /*Declarando un _slice_ dentro de cada elemento del _slice_ padre*/
         slice_of_slices[i] = make([]int, 3)
 
         /*Asignando valores a cada elemento del slice*/
