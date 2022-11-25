@@ -9,7 +9,7 @@
 	- [Ejercicios](#ejercicios)
 		- [Declarando un mapa](#declarando-un-mapa)
 		- [Inicializando un mapa](#inicializando-un-mapa)
-		- [Inicializando un mapa mediante la funcion make()](#inicializando-un-mapa-mediante-la-funcion-make)
+		- [Inicializando un mapa mediante la función _make()_](#inicializando-un-mapa-mediante-la-función-make)
 		- [Acceso a elementos del mapa](#acceso-a-elementos-del-mapa)
 		- [Cambiar valores dentro de un mapa](#cambiar-valores-dentro-de-un-mapa)
 		- [Agregar elementos al mapa](#agregar-elementos-al-mapa)
@@ -38,7 +38,7 @@ Es una estructura de datos no lineal cuyo propósito final se centra en llevar a
 - Un mapa es una colección desordenada y modificable que no permite duplicados.
 - La longitud de un mapa es el número de sus elementos. Este dato lo puedes obtener también utilizando la función `len()`.
 - El valor predeterminado de un mapa es `nil`.
-- Los mapas contienen referenias a una tabla hash subyacente.
+- Los mapas contienen referencias a una tabla hash subyacente.
 - Go tiene varias formas de crear mapas. 
 
 ### Tipos de clave permitidos
@@ -59,7 +59,7 @@ Los tipos de clave no válidos son:
 - Mapas (_Maps_)
 - Funciones (_Functions_)
 
-Estos tipos no son válidos porque el operador de igualdad () no está definido para ellos.==
+Estos tipos no son válidos porque el operador de igualdad () no está definido para ellos.
 
 ### Tipos de valores permitidos
 
@@ -98,7 +98,7 @@ map[]
 
 ### Inicializando un mapa
 
-Se inicializan dos mapas, el primero que está constituído como _string_ tanto la clave como el valor. El segundo está definido para que la clave sea de _string_ y los valores, numéricos enteros (_int_).
+Se inicializan dos mapas, el primero que está constituido como _string_ tanto la clave como el valor. El segundo está definido para que la clave sea de _string_ y los valores, numéricos enteros (_int_).
 
 ```go
 package main
@@ -135,7 +135,7 @@ a =     map[Lastname:Martínez Moreno Name:Jerson Antonio Username:jersonmartine
 b =     map[Day:6 Magic number:9 Month:4 Year:1996]
 ```
 
-### Inicializando un mapa mediante la funcion make()
+### Inicializando un mapa mediante la función _make()_
 
 ```go
 package main
@@ -434,7 +434,7 @@ jersonmartinez true
 true
 ```
 
-Se ha podido introducir Mapas en Go, pasando por su concepto, características, tipos de clave permitidos y de valores permitidos. Además, por medio de ejercicios, aprendes a declara un mapa, inicializar, accesar a elementos, cambiar valores, agregar elementos, eliminar y recorrer los elementos, asimismo, también verificar dichos elementos.
+Se ha podido introducir Mapas en Go, pasando por su concepto, características, tipos de clave permitidos y de valores permitidos. Además, por medio de ejercicios, aprendes a declarar un mapa, inicializar, acceso a elementos, cambiar valores, agregar elementos, eliminar y recorrer los elementos, asimismo, también verificar dichos elementos.
 
 ## Recursos
 
