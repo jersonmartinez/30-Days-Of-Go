@@ -439,6 +439,9 @@ Se ha podido introducir Mapas en Go, pasando por su concepto, características, 
 ## Recursos
 
 [🔥 Mapas (Maps)](https://apuntes.de/golang-estructuras-de-datos-y-algoritmos/mapas/#gsc.tab=0)
+
 [¿Qué es una tabla hash](https://www.ecured.cu/Tabla_hash)
+
 [Go Maps](https://www.w3schools.com/go/go_maps.php)
+
 [Progamiz - Maps in Go](https://www.programiz.com/golang/map)
