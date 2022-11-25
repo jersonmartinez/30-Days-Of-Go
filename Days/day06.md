@@ -1,3 +1,5 @@
+![image](https://d3nykx067fw7ke.cloudfront.net/pages/estudio/articles/44/uso-de-maps-en-go.png)
+
 > Navega por la tabla de contenido
 
 - [Maps](#maps)
