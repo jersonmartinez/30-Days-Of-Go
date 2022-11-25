@@ -1,17 +1,22 @@
 > Navega por la tabla de contenido
 
 - [Maps](#maps)
-  - [Introducción](#introducción)
-    - [Qué son los mapas en Go](#qué-son-los-mapas-en-go)
-    - [Características](#características)
-    - [Tipos de clave permitidos](#tipos-de-clave-permitidos)
-    - [Tipos de valores permitidos](#tipos-de-valores-permitidos)
-  - [Ejercicios](#ejercicios)
-    - [Declarando un mapa](#declarando-un-mapa)
-    - [Inicializando un mapa](#inicializando-un-mapa)
-    - [Inicializando un mapa mediante la funcion make()](#inicializando-un-mapa-mediante-la-funcion-make)
-    - [Acceso a elementos del mapa](#acceso-a-elementos-del-mapa)
-  - [Recursos](#recursos)
+	- [Introducción](#introducción)
+		- [Qué son los mapas en Go](#qué-son-los-mapas-en-go)
+		- [Características](#características)
+		- [Tipos de clave permitidos](#tipos-de-clave-permitidos)
+		- [Tipos de valores permitidos](#tipos-de-valores-permitidos)
+	- [Ejercicios](#ejercicios)
+		- [Declarando un mapa](#declarando-un-mapa)
+		- [Inicializando un mapa](#inicializando-un-mapa)
+		- [Inicializando un mapa mediante la funcion make()](#inicializando-un-mapa-mediante-la-funcion-make)
+		- [Acceso a elementos del mapa](#acceso-a-elementos-del-mapa)
+		- [Cambiar valores dentro de un mapa](#cambiar-valores-dentro-de-un-mapa)
+		- [Agregar elementos al mapa](#agregar-elementos-al-mapa)
+		- [Eliminar elemento en el mapa](#eliminar-elemento-en-el-mapa)
+		- [Recorriendo un mapa por medio de bucles](#recorriendo-un-mapa-por-medio-de-bucles)
+		- [Validar elementos específicos en el mapa](#validar-elementos-específicos-en-el-mapa)
+	- [Recursos](#recursos)
 
 # Maps
 
@@ -163,29 +168,277 @@ func main() {
 ```bash
 go run initialization_with_make.go
 
-#Output
+# Output
 a =     map[Lastname:Martínez Moreno Name:Jerson Antonio Username:jersonmartinez]
 b =     map[Day:6 Magic number:9 Month:4 Year:1996]
 ```
 
 ### Acceso a elementos del mapa
 
+Una vez creado al mapa, la forma de acceder es la misma que la de un arreglo; por medio del índice en la variable que contiene el mapa, ya sea que este índice sea compuesto de caracteres o numérica (depende de cómo se define el mapa). Observa el siguiente ejemplo donde se almacenan 3 datos y se imprimen dichos datos.
+
 ```go
 package main
-import ("fmt")
+
+import (
+	"fmt"
+)
 
 func main() {
-  var a = make(map[string]string)
-  a["brand"] = "Ford"
-  a["model"] = "Mustang"
-  a["year"] = "1964"
+	var a = make(map[string]string)
+	a["Username"] = "jersonmartinez"
+	a["Name"] = "Jerson Antonio"
+	a["Lastname"] = "Martínez Moreno"
 
-  fmt.Printf(a["brand"])
+	fmt.Printf("Your Username is: " + a["Username"] + "\n")
+	fmt.Printf("Your Name is: " + a["Name"] + "\n")
+	fmt.Printf("Your Lastname is: " + a["Lastname"])
 }
 ```
+
+```bash
+go run get_data.go
+
+# Output
+Your Username is: jersonmartinez
+Your Name is: Jerson Antonio
+Your Lastname is: Martínez Moreno
+```
+
+### Cambiar valores dentro de un mapa
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// Create a map
+	var a = map[string]string{
+		"Username": "jersonmartinez",
+		"Name":     "Jerson Antonio",
+		"Lastname": "Martínez Moreno",
+	}
+
+	fmt.Printf("=> Mapa inicial\n")
+	fmt.Printf("Your Username is: " + a["Username"] + "\n")
+	fmt.Printf("Your Name is: " + a["Name"] + "\n")
+	fmt.Printf("Your Lastname is: " + a["Lastname"] + "\n\n")
+
+	// Change values of the map
+	a["Username"] = "CoreStack"
+	a["Name"] = "Antonio"
+	a["Lastname"] = "Moreno"
+
+	fmt.Printf("=> Mapa modificado\n")
+	fmt.Printf("Your Username is: " + a["Username"] + "\n")
+	fmt.Printf("Your Name is: " + a["Name"] + "\n")
+	fmt.Printf("Your Lastname is: " + a["Lastname"])
+}
+
+```
+
+```bash
+go run change_values.go
+
+# Output
+=> Mapa inicial
+Your Username is: jersonmartinez
+Your Name is: Jerson Antonio
+Your Lastname is: Martínez Moreno
+
+=> Mapa modificado
+Your Username is: CoreStack
+Your Name is: Antonio
+Your Lastname is: Moreno
+```
+
+### Agregar elementos al mapa
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// Create a map
+	var User = map[string]string{
+		"Username": "jersonmartinez",
+		"Name":     "Jerson Antonio",
+		"Lastname": "Martínez Moreno",
+	}
+
+	// Add element
+	User["Age"] = "26"
+
+	// Add other element
+	User["Career"] = "DevOps Engineer"
+
+	fmt.Printf("Your Username is: " + User["Username"] + "\n")
+	fmt.Printf("Your Name is: " + User["Name"] + "\n")
+	fmt.Printf("Your Lastname is: " + User["Lastname"] + "\n")
+
+	// New elements
+	fmt.Printf("Your Age is: " + User["Age"] + "\n")
+	fmt.Printf("Your Career is: " + User["Career"] + "\n\n")
+
+}
+```
+
+```bash
+go run add_element.go
+
+# Output
+Your Username is: jersonmartinez
+Your Name is: Jerson Antonio
+Your Lastname is: Martínez Moreno
+Your Age is: 26
+Your Career is: DevOps Engineer
+```
+
+### Eliminar elemento en el mapa
+
+Go tiene una función integrada (`delete()`), que elimina un elemento respecto a la clave especificada en un mapa. Si la clave no está disponible en el mapa, la eliminación no es operativa; en caso de que exista la clave, este la elimina del mapa.
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// Create a map
+	var User = map[string]string{
+		"Username": "jersonmartinez",
+		"Name":     "Jerson Antonio",
+		"Lastname": "Martínez Moreno",
+	}
+
+	// Add element
+	User["Age"] = "26"
+
+	// Add other element
+	User["Career"] = "DevOps Engineer"
+
+	fmt.Printf("Your Username is: " + User["Username"] + "\n")
+	fmt.Printf("Your Name is: " + User["Name"] + "\n")
+	fmt.Printf("Your Lastname is: " + User["Lastname"] + "\n")
+
+	// Delete element "Age" key of the map "User".
+	delete(User, "Age")
+
+	// New elements
+	fmt.Printf("Your Age is: " + User["Age"] + "\n")
+	fmt.Printf("Your Career is: " + User["Career"] + "\n\n")
+
+}
+```
+
+```bash
+go run remove_element.go
+
+# Output
+Your Username is: jersonmartinez
+Your Name is: Jerson Antonio     
+Your Lastname is: Martínez Moreno
+Your Age is: 
+Your Career is: DevOps Engineer
+```
+
+### Recorriendo un mapa por medio de bucles
+
+Se recorre un mapa por medio de iteraciones en sus elementos. Usando la estructura repetitiva `for`.
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// Create a map
+	var User = map[string]string{
+		"Username": "jersonmartinez",
+		"Name":     "Jerson Antonio",
+		"Lastname": "Martínez Moreno",
+	}
+
+	// Looping through the map
+	for key, value := range User {
+		fmt.Printf("The %s is: %s \n", key, value)
+	}
+
+}
+```
+
+```bash
+go run looping_through.go
+
+# Output
+The Username is: jersonmartinez 
+The Name is: Jerson Antonio 
+The Lastname is: Martínez Moreno
+```
+
+### Validar elementos específicos en el mapa
+
+Es posible realizar un conjunto de validaciones en los elementos que integran el mapa. Si solo desea comprobar la existencia de una determinada clave, puede usar el identificador en blanco (`_`) en lugar de la variable que almacena el valor.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	// Create a map
+	var User = map[string]string{
+		"Username": "jersonmartinez",
+		"Name":     "Jerson Antonio",
+		"Lastname": "Martínez Moreno",
+		"Age":      "",
+	}
+
+	// Check if exists key and its value
+	k1, v1 := User["Username"]
+
+	// Check if non-exists key and its value
+	k2, v2 := User["Phone"]
+
+	// Check if exists key and its value
+	k3, v3 := User["Age"]
+
+	// Only check if exists key and not its value
+	_, v4 := User["Name"]
+
+	fmt.Println(k1, v1)
+	fmt.Println(k2, v2)
+	fmt.Println(k3, v3)
+	fmt.Println(v4)
+
+}
+```
+
+```bash
+go run check_specific_elemetns.go
+
+# Output
+jersonmartinez true
+ false
+ true 
+true
+```
+
+
 
 ## Recursos
 
 [🔥 Mapas (Maps)](https://apuntes.de/golang-estructuras-de-datos-y-algoritmos/mapas/#gsc.tab=0)
 [¿Qué es una tabla hash](https://www.ecured.cu/Tabla_hash)
 [Go Maps](https://www.w3schools.com/go/go_maps.php)
+[Progamiz - Maps in Go](https://www.programiz.com/golang/map)
