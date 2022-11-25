@@ -34,7 +34,7 @@ Estaré siguiendo la siguiente [ruta de aprendizaje de Go](https://roadmap.sh/go
 
 [✔️] ♾️ 6 > [Maps](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day06.md)
 
-[ ... ] ♾️ 7 > [Structs](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day07.md)
+[ Making... ] ♾️ 7 > [Structs](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day07.md)
 
 ## Going Deeper (Profundizando)
 
