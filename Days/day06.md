@@ -434,7 +434,7 @@ jersonmartinez true
 true
 ```
 
-
+Se ha podido introducir Mapas en Go, pasando por su concepto, características, tipos de clave permitidos y de valores permitidos. Además, por medio de ejercicios, aprendes a declara un mapa, inicializar, accesar a elementos, cambiar valores, agregar elementos, eliminar y recorrer los elementos, asimismo, también verificar dichos elementos.
 
 ## Recursos
 
