@@ -8,11 +8,12 @@
 		- [Declarar e instanciar una estructura](#declarar-e-instanciar-una-estructura)
 		- [Instanciar una structura](#instanciar-una-structura)
 		- [Almacenar e imprimir datos](#almacenar-e-imprimir-datos)
+	- [Preguntas curiosas sobre structs en Go](#preguntas-curiosas-sobre-structs-en-go)
 	- [Recursos](#recursos)
 
 # Structs
 
-**Un `struct` en Go es un tipo de datos que permite agrupar varios valores de diferentes tipos en una sola estructura.** Los valores se llaman campos y cada campo tiene un nombre y un tipo. Puedes declarar un struct vacío o inicializarlo con valores al momento de su declaración. También puedes crear un struct anónimo y asignarlo a una variable. Los campos de un struct se acceden utilizando el operador `.`.
+**Un struct en Go es un tipo de datos que permite agrupar varios valores de diferentes tipos en una sola estructura.** Los valores se llaman campos y cada campo tiene un nombre y un tipo. Puedes declarar un struct vacío o inicializarlo con valores al momento de su declaración. También puedes crear un struct anónimo y asignarlo a una variable. Los campos de un struct se acceden utilizando el operador `.`.
 
 ## Introducción
 
@@ -48,7 +49,7 @@ En resumen, los structs en Go son una herramienta muy importante para organizar 
 
 ### Declarar e instanciar una estructura
 
-Para declarar un `struct` en Go, primero debes definir el tipo de struct utilizando la palabra clave "type" seguida del nombre del struct, seguido de la estructura entre llaves {}. Los campos del struct se definen dentro de las llaves, con su nombre y tipo.
+Para declarar un struct en Go, primero debes definir el tipo de struct utilizando la palabra clave "type" seguida del nombre del struct, seguido de la estructura entre llaves {}. Los campos del struct se definen dentro de las llaves, con su nombre y tipo.
 
 La sintaxis básica sería la siguiente: 
 
@@ -140,5 +141,17 @@ go run add_data_and_print.go
 Name: Jerson Martínez
 Age: 26
 ```
+
+## Preguntas curiosas sobre structs en Go
+
+**¿Se pueden definir structs dentro y fuera de la función main en Go?**
+
+Sí, es posible definir structs tanto dentro como fuera de la función main en Go.
+
+**¿Cuál es la diferencia de declarar un struct dentro y fuera de la función main en Go?**
+
+La diferencia entre declarar un struct dentro y fuera de la función `main` en Go es la **visibilidad y alcance** de ese struct.
+Cuando se declara un struct fuera de cualquier función, se dice que es un struct global y su alcance es todo el paquete. Esto significa que cualquier función o archivo dentro del mismo paquete puede acceder y utilizar ese struct. Por otro lado, si se declara un struct dentro de una función, se dice que es un struct local y su alcance solo es dentro de esa función. Esto significa que solo se puede acceder y utilizar ese struct dentro de esa función donde se declaró.
+En general, es recomendado declarar structs fuera de las funciones para tener un mejor control y organización de la aplicación y poder reutilizar el struct en diferentes partes del código. Sin embargo, en algunos casos específicos puede ser útil utilizar structs locales para limitar el alcance de la información o para trabajar con un conjunto de datos temporal.
 
 ## Recursos
