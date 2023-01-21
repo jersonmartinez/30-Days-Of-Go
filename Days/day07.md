@@ -38,7 +38,8 @@ En resumen, los structs en Go son una herramienta muy importante para organizar 
 
 **Casos en los que puedes utilizar Structs en Go**
 
-- Las estructuras en Go se utilizan principalmente para agrupar diferentes tipos de datos relacionados en una sola entidad. Algunos casos comunes donde se utilizan estructuras en Go son:
+Las estructuras en Go se utilizan principalmente para agrupar diferentes tipos de datos relacionados en una sola entidad. Algunos casos comunes donde se utilizan estructuras en Go son:
+  
 - Modelado de datos: Se utilizan para modelar entidades y objetos en una aplicación, como por ejemplo, un usuario, un producto, un pedido, etc.
 - Manejo de datos complejos: Las estructuras se utilizan para agrupar diferentes tipos de datos relacionados y proporcionar una forma fácil de acceder y manipular esos datos.
 - Organización de código: Al agrupar datos y funcionalidad relacionados en una sola entidad, se puede mejorar la legibilidad y el mantenimiento del código.
