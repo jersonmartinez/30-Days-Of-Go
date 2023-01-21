@@ -11,6 +11,7 @@
 		- [Estructura Local](#estructura-local)
 		- [Funciones dentro de estructuras](#funciones-dentro-de-estructuras)
 		- [Asociar método dentro de una estructura](#asociar-método-dentro-de-una-estructura)
+	- [Resumen](#resumen)
 	- [Preguntas interesantes](#preguntas-interesantes)
 	- [Recursos](#recursos)
 
@@ -34,6 +35,15 @@ Además, los structs en Go son útiles para crear estructuras de datos complejas
 - Mejora la eficiencia del código: Al tener todos los datos relacionados en un solo objeto, se reducen las llamadas a funciones y la memoria utilizada.
 
 En resumen, los structs en Go son una herramienta muy importante para organizar y manejar datos de manera eficiente y legible en tu código, y son esenciales para crear aplicaciones complejas y escalables.
+
+**Casos en los que puedes utilizar Structs en Go**
+
+- Las estructuras en Go se utilizan principalmente para agrupar diferentes tipos de datos relacionados en una sola entidad. Algunos casos comunes donde se utilizan estructuras en Go son:
+- Modelado de datos: Se utilizan para modelar entidades y objetos en una aplicación, como por ejemplo, un usuario, un producto, un pedido, etc.
+- Manejo de datos complejos: Las estructuras se utilizan para agrupar diferentes tipos de datos relacionados y proporcionar una forma fácil de acceder y manipular esos datos.
+- Organización de código: Al agrupar datos y funcionalidad relacionados en una sola entidad, se puede mejorar la legibilidad y el mantenimiento del código.
+- Comunicación entre componentes: Las estructuras se utilizan para intercambiar datos entre diferentes componentes de una aplicación, como por ejemplo, entre diferentes funciones o entre diferentes paquetes.
+- Interfaz de programación: Las estructuras se utilizan para implementar una interfaz de programación y proporcionar una forma estandarizada de interactuar con diferentes componentes de una aplicación.
 
 ### Características
 
@@ -319,6 +329,12 @@ Name and age: Jerson Martínez 26
 
 En resumen, el algoritmo define una estructura Person con un campo `Info` de tipo `PrintInfo`, que es una función anónima que recibe dos argumentos de tipo `string` y `int` y devuelve un `string` con la concatenación de esos dos valores. Luego se asigna una instancia de `Person` con valores y se utiliza el campo `Info` para obtener el `string` concatenado de nombre y edad.
 
+## Resumen
+
+Las estructuras en Go son una forma de agrupar diferentes tipos de datos en una sola entidad. Se pueden definir campos de diferentes tipos, como strings, enteros, flotantes, etc. y también se pueden asociar funciones (métodos) a una estructura.
+
+Las estructuras son una herramienta importante en Go, ya que permiten organizar y agrupar diferentes tipos de datos en una sola entidad. Esto es especialmente útil para organizar y manipular datos complejos en una aplicación. Además, al asociar funciones a una estructura, se pueden crear métodos que proporcionen funcionalidad específica para esos datos.
+
 ## Preguntas interesantes
 
 **¿Se pueden definir structs dentro y fuera de la función main en Go?**
@@ -334,3 +350,7 @@ Cuando se declara un struct fuera de cualquier función, se dice que es un struc
 En general, es recomendado declarar structs fuera de las funciones para tener un mejor control y organización de la aplicación y poder reutilizar el struct en diferentes partes del código. Sin embargo, en algunos casos específicos puede ser útil utilizar structs locales para limitar el alcance de la información o para trabajar con un conjunto de datos temporal.
 
 ## Recursos
+
+[Structs en Golang - Programiz](https://www.programiz.com/golang/struct)
+
+[Structs en Golang - Geeks For Geeks](https://www.geeksforgeeks.org/structures-in-golang/)
