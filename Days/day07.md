@@ -146,12 +146,14 @@ Age: 26
 
 **¿Se pueden definir structs dentro y fuera de la función main en Go?**
 
-Sí, es posible definir structs tanto dentro como fuera de la función main en Go.
+**R:** Sí, es posible definir structs tanto dentro como fuera de la función main en Go.
 
 **¿Cuál es la diferencia de declarar un struct dentro y fuera de la función main en Go?**
 
-La diferencia entre declarar un struct dentro y fuera de la función `main` en Go es la **visibilidad y alcance** de ese struct.
+**R:** La diferencia entre declarar un struct dentro y fuera de la función `main` en Go es la **visibilidad y alcance** de ese struct.
+
 Cuando se declara un struct fuera de cualquier función, se dice que es un struct global y su alcance es todo el paquete. Esto significa que cualquier función o archivo dentro del mismo paquete puede acceder y utilizar ese struct. Por otro lado, si se declara un struct dentro de una función, se dice que es un struct local y su alcance solo es dentro de esa función. Esto significa que solo se puede acceder y utilizar ese struct dentro de esa función donde se declaró.
+
 En general, es recomendado declarar structs fuera de las funciones para tener un mejor control y organización de la aplicación y poder reutilizar el struct en diferentes partes del código. Sin embargo, en algunos casos específicos puede ser útil utilizar structs locales para limitar el alcance de la información o para trabajar con un conjunto de datos temporal.
 
 ## Recursos
