@@ -4,7 +4,10 @@
 	- [Introducción](#introducción)
 		- [Utilidad de structs](#utilidad-de-structs)
 		- [Características](#características)
-	- [Ejercicios](#ejercicios)
+	- [Ejemplos prácticos](#ejemplos-prácticos)
+		- [Declarar e instanciar una estructura](#declarar-e-instanciar-una-estructura)
+		- [Instanciar una structura](#instanciar-una-structura)
+		- [Almacenar e imprimir datos](#almacenar-e-imprimir-datos)
 	- [Recursos](#recursos)
 
 # Structs
@@ -41,9 +44,19 @@ En resumen, los structs en Go son una herramienta muy importante para organizar 
 - Interfaz: Los structs en Go pueden implementar una interfaz, lo cual permite tratar diferentes tipos de structs de la misma manera.
 - Valores o punteros: Los structs en Go pueden ser pasados como valores o como punteros, lo cual tiene implicaciones en el comportamiento y rendimiento.
 
-**Declarar una estructura**
+## Ejemplos prácticos
+
+### Declarar e instanciar una estructura
 
 Para declarar un `struct` en Go, primero debes definir el tipo de struct utilizando la palabra clave "type" seguida del nombre del struct, seguido de la estructura entre llaves {}. Los campos del struct se definen dentro de las llaves, con su nombre y tipo.
+
+La sintaxis básica sería la siguiente: 
+
+```go
+type StructureName struct {
+  // structure definition 
+}
+```
 
 Aquí tienes un ejemplo de cómo declarar un struct de un punto en un plano cartesiano:
 
@@ -64,9 +77,39 @@ p := Point{x: 3.0, y: 4.0}
 
 En este caso se crea una variable "p" de tipo "Point" con los valores 3.0 y 4.0 para los campos "x" y "y" respectivamente.
 
+```go
+package main
+
+import "fmt"
+
+type Point struct {
+	x float64
+	y float64
+}
+
+func main() {
+	p := Point{x: 3.0, y: 4.0}
+
+	fmt.Println("X:", p.x)
+	fmt.Println("Y:", p.y)
+}
+```
+
+```bash
+go run struct_declaration.go 
+
+# Output
+X: 3
+Y: 4
+```
+
 También es posible crear una variable de un struct vacío utilizando la sintaxis "nombre_del_tipo{}", y asignar valores a sus campos más adelante.
 
-## Ejercicios
+### Instanciar una structura
+
+
+
+### Almacenar e imprimir datos
 
 Almacenar nombre y edad de una persona en una estructura e imprimirla.
 
