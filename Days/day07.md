@@ -6,9 +6,10 @@
 		- [Características](#características)
 	- [Ejemplos prácticos](#ejemplos-prácticos)
 		- [Declarar e instanciar una estructura](#declarar-e-instanciar-una-estructura)
-		- [Instanciar una structura](#instanciar-una-structura)
 		- [Almacenar e imprimir datos](#almacenar-e-imprimir-datos)
-	- [Preguntas curiosas sobre structs en Go](#preguntas-curiosas-sobre-structs-en-go)
+		- [Estructura Global](#estructura-global)
+		- [Estructura Local](#estructura-local)
+	- [Preguntas interesantes](#preguntas-interesantes)
 	- [Recursos](#recursos)
 
 # Structs
@@ -106,10 +107,6 @@ Y: 4
 
 También es posible crear una variable de un struct vacío utilizando la sintaxis "nombre_del_tipo{}", y asignar valores a sus campos más adelante.
 
-### Instanciar una structura
-
-
-
 ### Almacenar e imprimir datos
 
 Almacenar nombre y edad de una persona en una estructura e imprimirla.
@@ -142,7 +139,57 @@ Name: Jerson Martínez
 Age: 26
 ```
 
-## Preguntas curiosas sobre structs en Go
+### Estructura Global
+
+En este ejemplo, primero se define un `struct` global `Person` con dos campos, *name* y *age*, ambos del tipo `string` y `int` respectivamente.
+
+Se crea la estructura fuera de la función main, lo que pasa a ser global, logrando que la función `printPerson` pueda acceder instanciándola desde sus parámetros por medio de (`person Person`).
+
+```go
+package main
+
+import "fmt"
+
+type Person struct {
+	name string
+	age  int
+}
+
+func main() {
+	var p Person
+	p.name = "Jerson Martínez"
+	p.age = 26
+	fmt.Println("Información de persona en la función main:")
+	fmt.Println("Name:", p.name)
+	fmt.Println("Age:", p.age)
+
+	fmt.Println("\nInformación de persona en la función printPerson:")
+	printPerson(p)
+}
+
+func printPerson(person Person) {
+	fmt.Println("Name:", person.name)
+	fmt.Println("Age:", person.age)
+}
+```
+
+```bash
+go run global_struct.go 
+
+# Output
+Información de persona en la función main:
+Name: Jerson Martínez
+Age: 26
+
+Información de persona en la función printPerson:
+Name: Jerson Martínez
+Age: 26
+```
+
+### Estructura Local
+
+
+## Preguntas interesantes
 
 **¿Se pueden definir structs dentro y fuera de la función main en Go?**
 
