@@ -14,27 +14,27 @@ Estaré siguiendo la siguiente [ruta de aprendizaje de Go](https://roadmap.sh/go
 
 #### Horario de estudio
 
-> Estudiaré y documentaré de Lunes a Viernes.
+> Estudiaré y documentaré los días Martes y Jueves.
 
 > Al finalizar el reto, haré contenido en forma de vídeos tutoriales y los inscrustaré en este mismo documento.
 
 ## Learn the Basics (Aprendiendo lo básico)
 
-[✔️] ♾️ 0 > [Introduction](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day00.md)
+[✔️] ♾️ 0 > [Introducción a Go](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day00.md)
 
-[✔️] ♾️ 1 > [Package fmt, environment variables and functions](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day01.md)
+[✔️] ♾️ 1 > [Paquete fmt | Variables de entorno | Funciones](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day01.md)
 
-[✔️] ♾️ 2 > [Go docs, Conditionals and Loops](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day02.md)
+[✔️] ♾️ 2 > [Documentación de Go (Go docs) | Condicionales | Ciclos (Loops)](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day02.md)
 
-[✔️] ♾️ 3 > [Switch and Keywords](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day03.md)
+[✔️] ♾️ 3 > [Switch y Keywords](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day03.md)
 
-[✔️] ♾️ 4 > [Arrays](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day04.md)
+[✔️] ♾️ 4 > [Arreglos (Arrays)](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day04.md)
 
 [✔️] ♾️ 5 > [Slices](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day05.md)
 
 [✔️] ♾️ 6 > [Maps](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day06.md)
 
-[ Developing... ] ♾️ 7 > [Structs](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day07.md)
+[ Developing... ] ♾️ 7 > [Estructuras (Structs)](https://github.com/jersonmartinez/30-Days-Of-Go/blob/main/Days/day07.md)
 
 ## Going Deeper (Profundizando)
 
