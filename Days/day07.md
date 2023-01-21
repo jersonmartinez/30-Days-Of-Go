@@ -9,6 +9,8 @@
 		- [Almacenar e imprimir datos](#almacenar-e-imprimir-datos)
 		- [Estructura Global](#estructura-global)
 		- [Estructura Local](#estructura-local)
+		- [Funciones dentro de estructuras](#funciones-dentro-de-estructuras)
+		- [Asociar método dentro de una estructura](#asociar-método-dentro-de-una-estructura)
 	- [Preguntas interesantes](#preguntas-interesantes)
 	- [Recursos](#recursos)
 
@@ -218,6 +220,103 @@ Age: 26
 ```
 
 En general, es recomendado declarar `structs` fuera de las funciones para tener un mejor control y organización de la aplicación y poder reutilizar el `struct` en diferentes partes del código.
+
+### Funciones dentro de estructuras
+
+En Go, las estructuras (`structs`) pueden tener funciones asociadas, conocidas como **métodos**. Estos métodos son funciones que tienen acceso a los campos de la estructura a la que están asociadas.
+
+```go
+package main
+
+import "fmt"
+
+// Define la estructura "Person" con dos campos, "name" y "age"
+type Person struct {
+	name string
+	age  int
+}
+
+// Define un método "PrintInfo" asociado a la estructura "Person"
+// El método recibe una variable de tipo "Person" y utiliza los campos de esa variable para imprimir en pantalla
+func (p Person) PrintInfo() {
+	fmt.Println("Name:", p.name)
+	fmt.Println("Age:", p.age)
+}
+
+func main() {
+	// Crea una variable "p" de tipo "Person" y asigna valores a los campos "name" y "age"
+	p := Person{name: "Jerson Martínez", age: 26}
+	// Llama al método "PrintInfo" de la variable "p"
+	p.PrintInfo()
+}
+```
+
+```bash
+go run functions_inside_struct.go 
+
+# Output
+Name: Jerson Martínez
+Age: 26
+```
+
+### Asociar método dentro de una estructura
+
+Cómo asociar una función anónima a un campo dentro de una estructura en Go.
+
+La estructura `Person` tiene tres campos: *name*, *age* e `Info`, del tipo `string`, `int` y `PrintInfo` respectivamente. El campo `Info` es una función del tipo `PrintInfo` que recibe dos argumentos de tipo `string` y `int` y devuelve un `string`.
+
+En la función *main*, se crea una variable *result* de tipo `Person` y se asignan valores a sus campos, incluyendo una función anónima al campo `Info` que utiliza la función `fmt.Sprintf` para concatenar el valor de los campos *name* y *age* y devuelve un `string` con el nombre y la edad del usuario.
+
+Finalmente, en la función *main* se imprimen el nombre y el nombre y edad del usuario mediante el uso del campo *name* y el campo `Info` respectivamente.
+
+```go
+package main
+
+import "fmt"
+
+// Declare a new type "PrintInfo" as a function
+// that takes two arguments, a string and an int
+// and returns a string
+type PrintInfo func(string, int) string
+
+// Declare a struct "Person" with fields "name", "age"
+// and "Info" of type string, int and PrintInfo respectively
+type Person struct {
+	name string
+	age  int
+	Info PrintInfo
+}
+
+func main() {
+
+	// Create a variable "result" of type "Person" and
+	// initialize its fields with values
+	result := Person{
+		name: "Jerson Martínez",
+		age:  26,
+		// An anonymous function is assigned to the "Info" field
+		// that takes the "name" and "age" fields of the "Person" struct and
+		// concatenates them using the fmt.Sprintf function
+		Info: func(name string, age int) string {
+			return fmt.Sprintf("%s %d", name, age)
+		},
+	}
+
+	// Print the "name" and "Info" fields of the "result" variable
+	fmt.Println("Name: ", result.name)
+	fmt.Println("Name and age:", result.Info(result.name, result.age))
+}
+```
+
+```bash
+go run associate_functions_inside_struct.go 
+
+# Output
+Name:  Jerson Martínez
+Name and age: Jerson Martínez 26
+```
+
+En resumen, el algoritmo define una estructura Person con un campo `Info` de tipo `PrintInfo`, que es una función anónima que recibe dos argumentos de tipo `string` y `int` y devuelve un `string` con la concatenación de esos dos valores. Luego se asigna una instancia de `Person` con valores y se utiliza el campo `Info` para obtener el `string` concatenado de nombre y edad.
 
 ## Preguntas interesantes
 
