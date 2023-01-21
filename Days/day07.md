@@ -274,13 +274,13 @@ package main
 
 import "fmt"
 
-// Declare a new type "PrintInfo" as a function
-// that takes two arguments, a string and an int
-// and returns a string
+// Declara un nuevo tipo "PrintInfo" como una función
+// que toma dos argumentos, un string y un int
+// y devuelve un string
 type PrintInfo func(string, int) string
 
-// Declare a struct "Person" with fields "name", "age"
-// and "Info" of type string, int and PrintInfo respectively
+// Declara una estructura "Person" con campos "name", "age"
+// y "Info" de tipo string, int y PrintInfo respectivamente
 type Person struct {
 	name string
 	age  int
@@ -289,23 +289,24 @@ type Person struct {
 
 func main() {
 
-	// Create a variable "result" of type "Person" and
-	// initialize its fields with values
+    // Crea una variable "result" de tipo "Person" e
+    // inicializa sus campos con valores
 	result := Person{
 		name: "Jerson Martínez",
 		age:  26,
-		// An anonymous function is assigned to the "Info" field
-		// that takes the "name" and "age" fields of the "Person" struct and
-		// concatenates them using the fmt.Sprintf function
+		// Se asigna una función anónima al campo "Info"
+        // que toma los campos "name" y "age" de la estructura "Person"
+        // y los concatena usando la función fmt.Sprintf
 		Info: func(name string, age int) string {
 			return fmt.Sprintf("%s %d", name, age)
 		},
 	}
 
-	// Print the "name" and "Info" fields of the "result" variable
-	fmt.Println("Name: ", result.name)
-	fmt.Println("Name and age:", result.Info(result.name, result.age))
+    // Imprime los campos "name" y "Info" de la variable "result"
+	fmt.Println("Nombre: ", result.name)
+	fmt.Println("Nombre y edad:", result.Info(result.name, result.age))
 }
+
 ```
 
 ```bash
