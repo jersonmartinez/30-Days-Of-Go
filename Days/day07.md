@@ -188,6 +188,36 @@ Age: 26
 
 ### Estructura Local
 
+En este ejemplo, el `struct` *Person* se define dentro de la función `main`, por lo que es un `struct` local y su alcance solo es dentro de la función `main`. En la función `main` se crea una variable `p` de tipo *Person* y se inicializan sus campos *name* y *age* con los valores "Jerson Martínez" y 26 respectivamente.
+
+Es importante destacar que el `struct` *Person* solo es accesible y utilizable dentro de la función `main` y no estará disponible en otras funciones o archivos del paquete.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	type Person struct {
+		name string
+		age  int
+	}
+
+	p := Person{name: "Jerson Martínez", age: 26}
+	fmt.Println("Name:", p.name)
+	fmt.Println("Age:", p.age)
+}
+```
+
+```bash
+go run local_struct.go 
+
+# Output
+Name: Jerson Martínez
+Age: 26
+```
+
+En general, es recomendado declarar `structs` fuera de las funciones para tener un mejor control y organización de la aplicación y poder reutilizar el `struct` en diferentes partes del código.
 
 ## Preguntas interesantes
 
