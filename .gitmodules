@@ -1,0 +1,3 @@
+[submodule "Projects/Web-Scraper-With-Go"]
+	path = Projects/Web-Scraper-With-Go
+	url = https://github.com/jersonmartinez/Web-Scraper-with-Go.git
