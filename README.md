@@ -12,6 +12,33 @@ Mantener una racha de 30 días aprendiendo Go es un reto personal, y la idea es 
 
 🧭 Estaré siguiendo la siguiente [ruta de aprendizaje de Go](https://roadmap.sh/golang).
 
+## 🎯 Qué aprenderás en este reto
+
+- 🔤 Sintaxis base, tipos, variables y funciones.
+- 🧩 Control de flujo: condicionales, loops y switch.
+- 🧱 Estructuras de datos en Go: arrays, slices y maps.
+- 🧪 Prácticas con ejemplos reales, mini-ejercicios y proyectos.
+- ⚙️ Enfoque práctico orientado a fortalecer habilidades para DevOps.
+
+## 🧭 Cómo usar este repositorio
+
+- 📚 Cada día tiene su propia nota dentro de `Days/`.
+- 🧭 Sigue el orden por día para construir la base paso a paso.
+- ✅ Si ya dominas un tema, puedes saltar al siguiente.
+- 💡 Si encuentras mejoras o correcciones, ¡hazlas y comparte!
+
+## 🧱 Estructura del contenido
+
+- `Days/day00.md` → Introducción, instalación y primer programa.
+- `Days/day01.md` → fmt, variables de entorno y funciones.
+- `Days/day02.md` → Condicionales, ciclos y uso básico de Go docs.
+- `Days/day03.md` → Switch y palabras clave.
+- `Days/day04.md` → Arrays.
+- `Days/day05.md` → Slices.
+- `Days/day06.md` → Maps.
+- `Days/day07.md` → Structs.
+- `Days/day08.md` → Marshalling & Unmarshalling (en progreso).
+
 ## 🗓️ Horario de estudio
 
 > Estudiaré y documentaré los días Martes y Jueves.
