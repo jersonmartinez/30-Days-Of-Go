@@ -20,6 +20,10 @@ Mantener una racha de 30 días aprendiendo Go es un reto personal, y la idea es 
 - 🧪 Prácticas con ejemplos reales, mini-ejercicios y proyectos.
 - ⚙️ Enfoque práctico orientado a fortalecer habilidades para DevOps.
 
+## 🌍 Visión del repositorio
+
+Este repositorio no es solo una lista de apuntes: es un mapa de aprendizaje que convierte conceptos en hábito. La visión es formar a un programador de Go con criterio profesional, capaz de leer documentación oficial con soltura, diseñar código confiable y mantener la calma cuando el compilador “no coopera” (spoiler: sí coopera, solo está pidiendo algo muy específico). Aquí entrenamos la paciencia, la claridad mental y la capacidad de construir soluciones que funcionen en producción y no solo en un tutorial.
+
 ## 🧭 Cómo usar este repositorio
 
 - 📚 Cada día tiene su propia nota dentro de `Days/`.

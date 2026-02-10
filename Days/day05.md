@@ -329,3 +329,15 @@ Slice of slices:  [[0 0 0] [0 1 2] [0 2 4]]
 [A Tour of Go](https://go.dev/tour/moretypes/7)
 
 https://www.includehelp.com/golang/append-function-with-examples.aspx
+
+## ✅ Enfoque profesional
+
+Los slices son la “navaja suiza” de Go. Un programador avanzado sabe cuándo crecer un slice y cuándo preasignar capacidad para evitar reallocations invisibles que afectan rendimiento.
+
+## 😄 Anécdota con lección
+
+Una vez hice `append` en un loop con millones de elementos y me pregunté por qué la memoria subía como cohete. Descubrí `make([]T, 0, n)` y sentí que había desbloqueado un superpoder. Lo importante: no te frustres, optimizar es un segundo paso, primero hazlo funcionar.
+
+## 🧭 Ejercicio de técnica
+
+Practica `append` con capacidad predefinida y experimenta con `copy`. Verás cómo controlar memoria y performance con elegancia.

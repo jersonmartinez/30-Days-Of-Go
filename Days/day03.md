@@ -400,3 +400,15 @@ Estos han sido algunos ejemplos del modo de uso de las palabras claves `defer`, 
 [Go by Example: Switch](https://gobyexample.com/switch)
 
 [Defer Keyword in Golang - GeeksforGeeks](https://www.geeksforgeeks.org/defer-keyword-in-golang/)
+
+## ✅ Enfoque profesional
+
+`switch` y `defer` son herramientas de precisión. En Go, la limpieza del flujo importa tanto como la lógica. Un `defer` bien usado evita fugas y un `switch` claro evita el “if-else infinito”.
+
+## 😄 La vez que el `switch` me habló
+
+Una vez olvidé que `switch` en Go no hace fallthrough por defecto. Pensé que el bug era un misterio cósmico… hasta que recordé la especificación. Moraleja: Go es consistente, pero tu memoria no siempre. Si algo “no sucede”, revisa el default y respira.
+
+## 🧭 Desafío práctico
+
+Practica con `switch` de tipos e incluye `defer` para cerrar recursos. Hazlo en un mini-script que abra un archivo, lea una línea y lo cierre con elegancia.
