@@ -389,3 +389,15 @@ Trapecio: 22.50
 [¿Cual es el mejor Framework web de Golang?](https://www.youtube.com/watch?v=Pq6rkq7iuHM)
 
 [CÓMO hacer un CRUD - crud GOlang MySql PASO a PASO](https://www.youtube.com/watch?v=G58gN0lIbyI)
+
+## ✅ Enfoque profesional
+
+Las funciones y el paquete `fmt` son tu primer laboratorio para aprender a expresar intención en Go. Un programador avanzado piensa en legibilidad antes que en trucos: si el formato queda claro, el mantenimiento también.
+
+## 😄 Mini-historia de guardia nocturna
+
+Una vez lancé un deploy y todo parecía perfecto… hasta que vi un `Printf` sin salto de línea. Los logs quedaron pegados como chicle en la suela y el on-call me miró raro. Moraleja: un `\n` a tiempo ahorra un ticket a medianoche.
+
+## 🧭 Ejercicio recomendado
+
+Practica funciones con múltiples retornos y maneja errores aunque el ejemplo “no los necesite”. Tu yo del futuro te lo agradecerá.

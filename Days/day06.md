@@ -447,3 +447,15 @@ Se ha podido introducir Mapas en Go, pasando por su concepto, características, 
 [Go Maps](https://www.w3schools.com/go/go_maps.php)
 
 [Progamiz - Maps in Go](https://www.programiz.com/golang/map)
+
+## ✅ Enfoque profesional
+
+Los mapas son poderosos, pero recuerda: el orden no está garantizado. Un programador avanzado no depende del orden de iteración, y cuando lo necesita, lo construye explícitamente con slices de claves ordenadas.
+
+## 😄 El mapa “mágico” que cambiaba
+
+Un día imprimí un mapa y el resultado “cambiaba” cada ejecución. Pensé que Go estaba poseído. En realidad, el runtime solo estaba haciendo su trabajo. Aprendí a no pelear con el lenguaje: si quiero orden, lo creo.
+
+## 🧭 Siguiente reto
+
+Crea un mapa con conteo de palabras y luego ordena las claves para imprimir un reporte limpio. Te sorprenderá lo profesional que se ve.

@@ -357,3 +357,15 @@ En general, es recomendado declarar structs fuera de las funciones para tener un
 [Structs en Golang - Programiz](https://www.programiz.com/golang/struct)
 
 [Structs en Golang - Geeks For Geeks](https://www.geeksforgeeks.org/structures-in-golang/)
+
+## ✅ Enfoque profesional
+
+Los structs son el corazón del modelado en Go. Un programador avanzado piensa en structs como contratos: si el contrato es claro, el diseño del sistema también lo es. Define nombres explícitos y evita sobrecargar un struct con demasiadas responsabilidades.
+
+## 😄 Historia real: el struct “temporal”
+
+En un proyecto, añadí 14 campos a un struct “temporal”. Spoiler: se volvió permanente. Resultado: cada cambio era un caos. La cura fue extraer structs más pequeños. Si un struct parece novela, es hora de dividirlo en capítulos.
+
+## 🧭 Práctica sugerida
+
+Crea structs pequeños con métodos asociados. Practica el diseño de paquetes y piensa cómo representar el dominio de tu proyecto de manera limpia.
