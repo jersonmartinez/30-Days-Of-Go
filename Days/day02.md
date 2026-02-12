@@ -323,3 +323,15 @@ https://gobyexample.com/
 `YouTube Vídeos`
 
 [justforfunc: Programming in Go - YouTube](https://www.youtube.com/c/JustForFunc/)
+
+## ✅ Enfoque profesional
+
+Los condicionales y loops en Go son directos porque el lenguaje te invita a ser explícito. Un programador avanzado usa esta claridad para reducir caminos lógicos innecesarios y evitar “magia” que solo entiende quien la escribió.
+
+## 😄 Confesión de refactor
+
+En un refactor, convertí un `if` sencillo en un árbol de 6 niveles. Cuando volví a leerlo, yo mismo no lo entendía. La solución fue brutal y sana: simplificar y dejar que el código hable solo. Si necesitas un mapa para seguir tu `if`, es momento de respirar y cortar.
+
+## 🧭 Siguiente práctica
+
+Practica refactorizar tus loops: usa `continue` para reducir anidación y añade comentarios solo cuando la intención no sea obvia.

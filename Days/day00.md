@@ -112,6 +112,18 @@ Las variables sirven para asociar una tira de datos con un sector de la memoria,
 
 Definir variables con las palabras reservadas `var` y `const`.
 
+## ✅ Enfoque profesional
+
+Como desarrollador Go avanzado, mi recomendación es que desde el inicio te acostumbres a leer la documentación oficial con intención: no solo “qué hace”, sino “qué promete”. Go es un lenguaje que te premia cuando sigues las convenciones y te avisa rápido cuando te desvías. Ese feedback temprano es oro en equipos de alto rendimiento.
+
+## 😄 Una anécdota con moraleja
+
+La primera vez que instalé Go en un servidor, juré que el PATH estaba bien… y pasé 25 minutos peleando con `go: command not found`. Resultó que el archivo de perfil correcto no era `.bashrc`, era `.profile`. ¿La lección? Antes de pelear con tu laptop, respira, revisa el PATH y recuerda: el error casi siempre dice la verdad, solo que con cara seria.
+
+## 🧭 Desafío breve
+
+Una vez listo el “Hello, World!”, intenta crear un pequeño script que pida tu nombre y lo salude. Es simple, pero te obligará a practicar compilación, ejecución y lectura de entrada estándar.
+
 **Declarando constantes:**
 
 ```go

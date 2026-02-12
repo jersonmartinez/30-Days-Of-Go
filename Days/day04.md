@@ -305,3 +305,15 @@ Last two elements: [Germany Italy]
 [Go by Example: Arrays](https://gobyexample.com/arrays)
 
 [Arrays in Go with examples - golangprograms.com](https://www.golangprograms.com/go-language/arrays.html)
+
+## ✅ Enfoque profesional
+
+Los arrays en Go son de tamaño fijo. Un programador avanzado los usa cuando la inmutabilidad del tamaño aporta seguridad y rendimiento. Si necesitas flexibilidad, recuerda que el slice es el protagonista.
+
+## 😄 Aprendizaje con humor
+
+Hice un benchmark pensando que “un array de 1000” era dinámico. Spoiler: no lo era. Terminé peleando con el compilador como si fuera una discusión de pareja. Al final, aprendí que Go no se enoja, solo te obliga a ser preciso.
+
+## 🧭 Siguiente paso
+
+Crea un pequeño inventario con arrays fijos y luego migra la misma lógica a slices. Comparar ambos enfoques te enseñará más que cualquier tutorial.
